@@ -70,7 +70,15 @@ Leia a [política de privacidade](docs/PRIVACIDADE.md), também disponível offl
 
 ## Capturas de tela
 
-As capturas da interface atual serão adicionadas após a instalação da versão 0.1.10 no celular.
+Capturas reais da versão 0.1.10, enviadas pelo autor após consulta e download concluído no celular.
+
+| Início | Consulta | Resultados |
+| --- | --- | --- |
+| ![Início](docs/capturas/inicio.png) | ![Consulta sem IMEI](docs/capturas/consulta.png) | ![Resultados](docs/capturas/resultados.png) |
+
+| Download em andamento | Download concluído |
+| --- | --- |
+| ![Progresso](docs/capturas/download.png) | ![Concluído](docs/capturas/concluido.png) |
 
 ## Autoria e créditos
 
