@@ -1,10 +1,10 @@
 # Política de privacidade — ROMFlow
 
-Vigente para a versão 0.1.9 · 18 de novembro de 2026
+Vigente para a versão 0.1.10 · 18 de novembro de 2026
 
 ## Quem desenvolve o aplicativo
 
-ROMFlow é um projeto independente de Técnico Root, de Ivanildo Sousa. Não é um produto oficial nem possui vínculo declarado com Motorola, Lenovo, Samsung ou Google. Contato de suporte e privacidade: [paradaseimportsoficial@gmail.com](mailto:paradaseimportsoficial@gmail.com). Contato adicional da marca: WhatsApp +55 (99) 98504-2070.
+ROMFlow é um projeto independente de Técnico Root, de Ivanildo Sousa. Não é um produto oficial nem possui vínculo declarado com Motorola, Lenovo, Samsung ou Google. Contato de suporte e privacidade: [paradaseimportsoficial@gmail.com](mailto:paradaseimportsoficial@gmail.com).
 
 ## Para que os dados são usados
 
@@ -20,7 +20,7 @@ O modelo e o IMEI digitados ficam na memória durante o fluxo de consulta; o app
 
 ## Downloads de ROM
 
-O arquivo é baixado diretamente do endereço fornecido pelo catálogo por meio do gerenciador de downloads do Android. As ROMs ficam em Downloads/Tecnico-ROM-Moto e podem continuar no aparelho após a desinstalação do app. Ao conectar aos serviços, os servidores de destino recebem dados técnicos da conexão, como endereço IP. O criador não hospeda as ROMs nem mantém um servidor próprio para receber modelo, IMEI ou sessão.
+O arquivo é baixado diretamente do endereço fornecido pelo catálogo por meio do gerenciador de downloads do Android. As ROMs ficam em Downloads/ROMFlow e podem continuar no aparelho após a desinstalação do app. Ao conectar aos serviços, os servidores de destino recebem dados técnicos da conexão, como endereço IP. O criador não hospeda as ROMs nem mantém um servidor próprio para receber modelo, IMEI ou sessão.
 
 ## Publicidade e escolhas de privacidade
 
@@ -48,4 +48,3 @@ Dúvidas sobre o aplicativo e solicitações relacionadas aos dados sob responsa
 
 ## Políticas e documentos dos serviços
 
-[Privacidade do Google](https://policies.google.com/privacy)[Privacidade Lenovo](https://www.lenovo.com/br/pt/privacy/)[Privacidade GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)[Contato da marca pelo WhatsApp](https://wa.me/5599985042070)
