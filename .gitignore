@@ -1,0 +1,14 @@
+# Repositório público de distribuição: APKs ficam em Releases.
+*.apk
+*.zip
+*.p12
+*.jks
+*.keystore
+*.pem
+*.key
+*.env
+.env*
+mapping.txt
+configuration.txt
+assinatura-privada/
+projeto-privado/
