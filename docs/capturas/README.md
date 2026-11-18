@@ -1,3 +1,3 @@
-# Capturas de tela do ROMFlow
+# Capturas do ROMFlow
 
-As imagens da versão anterior foram retiradas da apresentação para evitar a exibição do nome antigo. Capturas reais da versão 0.1.10 serão adicionadas após o teste no celular. Não publicar IMEI, dados de sessão ou informações bancárias nas imagens.
+Cinco capturas reais da versão 0.1.10, enviadas pelo autor em 18 de novembro de 2026: início, formulário sem IMEI, resultado, andamento e download concluído. O teste confirma consulta e download; não confirma veiculação de anúncios. A imagem com IMEI preenchido não foi publicada.
