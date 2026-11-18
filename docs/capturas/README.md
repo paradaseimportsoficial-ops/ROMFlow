@@ -1,3 +1,3 @@
-# Capturas do aplicativo
+# Capturas de tela do ROMFlow
 
-Capturas reais enviadas pelo autor, registradas na versão 0.1.7 durante a consulta e o download de uma ROM. O aplicativo passou a se chamar ROMFlow na versão 0.1.8; o fluxo apresentado permanece o mesmo.
+As imagens da versão anterior foram retiradas da apresentação para evitar a exibição do nome antigo. Capturas reais da versão 0.1.10 serão adicionadas após o teste no celular. Não publicar IMEI, dados de sessão ou informações bancárias nas imagens.
