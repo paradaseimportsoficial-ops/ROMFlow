@@ -6,7 +6,7 @@ Consulte pacotes de firmware e acompanhe o download em uma interface simples, se
 
 ![Ícone do ROMFlow](docs/icone-512.png)
 
-> **ROMFlow 0.1.11 — por Técnico Root.** Aplicativo independente para consultar e baixar pacotes de firmware pelo Android. Não instala nem grava a ROM no aparelho.
+> **ROMFlow 0.1.12 — por Técnico Root.** Aplicativo independente para consultar e baixar pacotes de firmware pelo Android. Não instala nem grava a ROM no aparelho.
 
 ## O que o aplicativo faz
 
