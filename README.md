@@ -6,7 +6,7 @@ Consulte pacotes de firmware e acompanhe o download em uma interface simples, se
 
 ![Ícone do ROMFlow](docs/icone-512.png)
 
-> **ROMFlow 0.1.12 — por Técnico Root.** Aplicativo independente para consultar e baixar pacotes de firmware pelo Android. Não instala nem grava a ROM no aparelho.
+> **ROMFlow 0.1.13 — por Técnico Root.** Aplicativo independente para consultar e baixar pacotes de firmware pelo Android. Não instala nem grava a ROM no aparelho.
 
 ## O que o aplicativo faz
 
@@ -52,7 +52,7 @@ O projeto pretende se sustentar com publicidade AdMob e contribuições voluntá
 
 A partir da versão 0.1.11, o aplicativo pode exibir um anúncio após a confirmação do download e antes de iniciar a transferência. Ao fechar o anúncio, o download começa automaticamente; se nenhum estiver pronto ou houver falha, ele começa normalmente. Também há uma oportunidade na conclusão acompanhada em primeiro plano, com intervalo mínimo de um minuto entre exibições para evitar anúncios seguidos em downloads rápidos. Um download que terminou fora da tela não abre anúncio atrasado. Em Sobre, Diagnóstico dos anúncios mostra o estado do carregamento e erros técnicos locais, sem IMEI, modelo ou sessão. Publicar no GitHub não garante aprovação nem veiculação no AdMob.
 
-O Pix é opcional. O aplicativo não acessa a conta bancária do usuário nem executa ou confirma pagamentos.
+O Pix é opcional. O aplicativo não acessa a conta bancária do usuário nem executa ou confirma pagamentos. Na versão 0.1.13, o QR Code e o Copia e Cola incluem a descrição **Apoio ao ROMFlow** e o identificador **ROMFLOWAPOIO20261118**. No teste do autor, o identificador apareceu no comprovante da conta Nubank recebedora; a apresentação pode variar em outros bancos.
 
 ## Atualizações
 
