@@ -6,7 +6,7 @@ Consulte pacotes de firmware e acompanhe o download em uma interface simples, se
 
 ![Ícone do ROMFlow](docs/icone-512.png)
 
-> **ROMFlow 0.1.10 — por Técnico Root.** Aplicativo independente para consultar e baixar pacotes de firmware pelo Android. Não instala nem grava a ROM no aparelho.
+> **ROMFlow 0.1.11 — por Técnico Root.** Aplicativo independente para consultar e baixar pacotes de firmware pelo Android. Não instala nem grava a ROM no aparelho.
 
 ## O que o aplicativo faz
 
@@ -50,7 +50,7 @@ Não exige root e não lê o IMEI automaticamente. A interface é em português.
 
 O projeto pretende se sustentar com publicidade AdMob e contribuições voluntárias por Pix. As edições assinadas de distribuição usam o bloco real do criador. A disponibilidade de anúncios e a geração de receita dependem da plataforma e de sua revisão; a preparação de um APK não é uma aprovação.
 
-O anúncio intersticial tem uma única oportunidade na conclusão de um download acompanhado em primeiro plano. Um download que já terminou antes de voltar à tela não abre um anúncio atrasado. Quando não há anúncio disponível, o arquivo continua acessível.
+A partir da versão 0.1.11, o aplicativo pode exibir um anúncio após a confirmação do download e antes de iniciar a transferência. Ao fechar o anúncio, o download começa automaticamente; se nenhum estiver pronto ou houver falha, ele começa normalmente. Também há uma oportunidade na conclusão acompanhada em primeiro plano, com intervalo mínimo de um minuto entre exibições para evitar anúncios seguidos em downloads rápidos. Um download que terminou fora da tela não abre anúncio atrasado. Em Sobre, Diagnóstico dos anúncios mostra o estado do carregamento e erros técnicos locais, sem IMEI, modelo ou sessão. Publicar no GitHub não garante aprovação nem veiculação no AdMob.
 
 O Pix é opcional. O aplicativo não acessa a conta bancária do usuário nem executa ou confirma pagamentos.
 
