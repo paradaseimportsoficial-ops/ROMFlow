@@ -6,14 +6,14 @@ Consulte pacotes de firmware e acompanhe o download em uma interface simples, se
 
 ![Ícone do ROMFlow](docs/icone-512.png)
 
-> **ROMFlow 0.1.9 — por Técnico Root.** Aplicativo independente para consultar e baixar pacotes de firmware pelo Android. Não instala nem grava a ROM no aparelho.
+> **ROMFlow 0.1.10 — por Técnico Root.** Aplicativo independente para consultar e baixar pacotes de firmware pelo Android. Não instala nem grava a ROM no aparelho.
 
 ## O que o aplicativo faz
 
 - Abre o login Motorola/Lenovo no navegador externo, inclusive para quem usa conta Google.
 - Consulta o catálogo usando o código do modelo e o IMEI informados pelo usuário.
 - Apresenta os pacotes retornados e permite escolher qual baixar.
-- Mostra o andamento e salva o ZIP em **Downloads/Tecnico-ROM-Moto**.
+- Mostra o andamento e salva o ZIP em **Downloads/ROMFlow**.
 - Inclui ajuda ilustrada para localizar modelo e IMEI.
 - Continua o download pelo gerenciador do Android quando você sai da tela.
 
@@ -21,9 +21,9 @@ O app baixa o pacote; a instalação ou gravação da ROM é uma etapa separada.
 
 ## Download
 
-**[Baixar a versão mais recente](https://github.com/paradaseimportsoficial-ops/tecnico-rom-moto/releases/latest)**
+**[Baixar a versão mais recente](https://github.com/paradaseimportsoficial-ops/ROMFlow/releases/latest)**
 
-Na seção Releases, baixe **Tecnico-ROM-Moto.apk**. Esse nome técnico é preservado para compatibilidade com o atualizador; o nome mostrado no celular é **ROMFlow**. O arquivo **SHA256SUMS.txt** permite conferir a integridade do download.
+Na seção Releases, baixe **ROMFlow.apk**. O arquivo **SHA256SUMS.txt** permite conferir a integridade do download.
 
 O GitHub é o canal de distribuição direta. A edição da VIVO está prevista e depende de cadastro, envio e aprovação; ainda não está publicada na loja.
 
@@ -34,7 +34,7 @@ O GitHub é o canal de distribuição direta. A edição da VIVO está prevista 
 3. Confira se a conta foi reconhecida.
 4. Digite o código completo do modelo (por exemplo, o código XT que aparece nas informações do aparelho) e o IMEI. O botão de ajuda mostra onde encontrá-los.
 5. Consulte os pacotes, confira as informações e escolha o download.
-6. Acompanhe em Meus downloads. O ZIP ficará disponível em Downloads/Tecnico-ROM-Moto.
+6. Acompanhe em Meus downloads. O ZIP ficará disponível em Downloads/ROMFlow.
 
 Use somente identificadores de aparelhos próprios ou que você tenha autorização para consultar. Se o login não concluir, não publique URLs de retorno: elas podem conter um código de sessão.
 
@@ -56,7 +56,7 @@ O Pix é opcional. O aplicativo não acessa a conta bancária do usuário nem ex
 
 ## Atualizações
 
-A edição do GitHub consulta novas versões em Releases ao abrir ou retornar ao aplicativo. Quando encontra uma versão mais recente, a atualização é obrigatória para continuar: é possível atualizar ou sair. A exigência já detectada permanece salva mesmo sem conexão. Se a consulta falhar antes de detectar uma atualização, o app permite usar a versão instalada. Ao iniciar a atualização, o APK é baixado e verificado por SHA-256, pacote, versão e assinatura. O Android pede confirmação para instalar. O canal consulta a Release pública mais recente deste repositório.
+A edição do GitHub consulta novas versões em Releases ao abrir ou retornar ao aplicativo. Quando encontra uma versão mais recente, a atualização é obrigatória para continuar: é possível atualizar ou sair. A exigência já detectada permanece salva mesmo sem conexão. Se a consulta falhar antes de detectar uma atualização, o app permite usar a versão instalada. Ao iniciar a atualização, o APK é baixado e verificado por SHA-256, pacote, versão e assinatura. O Android pede confirmação para instalar. O canal consulta a Release pública mais recente deste repositório. Quem usa a versão 0.1.9 ou anterior precisa instalar a 0.1.10 pelo link uma vez para migrar ao novo endereço de atualização. Não é necessário desinstalar as edições com a assinatura definitiva.
 
 A edição de loja recebe atualizações pela loja e não inclui a permissão para instalar APKs. As duas edições mantêm o mesmo nome de pacote e certificado definitivo. A troca entre canais também depende da versão e das políticas de assinatura da loja.
 
@@ -70,15 +70,7 @@ Leia a [política de privacidade](docs/PRIVACIDADE.md), também disponível offl
 
 ## Capturas de tela
 
-Capturas reais da versão 0.1.7, enviadas pelo autor durante a consulta e download de uma ROM do Edge 50 Fusion. A versão 0.1.8 passa a se chamar ROMFlow, reforça a proteção do APK e modifica o fluxo de atualização e o nome exibido no apoio por Pix. As imagens serão atualizadas após o teste dessa edição no celular.
-
-| Início | Consulta | Resultados |
-| --- | --- | --- |
-| ![Início](docs/capturas/inicio.png) | ![Consulta](docs/capturas/consulta.png) | ![Resultados](docs/capturas/resultados.png) |
-
-| Download em andamento | Download concluído |
-| --- | --- |
-| ![Progresso](docs/capturas/download.png) | ![Concluído](docs/capturas/concluido.png) |
+As capturas da interface atual serão adicionadas após a instalação da versão 0.1.10 no celular.
 
 ## Autoria e créditos
 
