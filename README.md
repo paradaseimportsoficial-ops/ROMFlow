@@ -6,7 +6,7 @@ Três abas: **Baixar ROM**, **Instalar ROM** e **Avançado**. Consulte o firmwar
 
 ![Ícone do ROMFlow](docs/icone-512.png)
 
-> **ROMFlow 0.1.16 — por Técnico Root.** Aplicativo independente. A instalação exige outro aparelho em fastboot, cabo de dados e OTG compatíveis; não grava a ROM no celular que executa o ROMFlow.
+> **ROMFlow 0.1.16 — publicação em preparação. O download público permanece na 0.1.15 até a publicação da nova release.** Por Técnico Root. Aplicativo independente. A instalação exige outro aparelho em fastboot, cabo de dados e OTG compatíveis; não grava a ROM no celular que executa o ROMFlow.
 
 ## Novidades da versão 0.1.16
 
