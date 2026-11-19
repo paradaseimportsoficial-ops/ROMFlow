@@ -6,7 +6,7 @@ Três abas: **Baixar ROM**, **Instalar ROM** e **Avançado**. Consulte o firmwar
 
 ![Ícone do ROMFlow](docs/icone-512.png)
 
-> **ROMFlow 0.1.16 — publicação em preparação. O download público permanece na 0.1.15 até a publicação da nova release.** Por Técnico Root. Aplicativo independente. A instalação exige outro aparelho em fastboot, cabo de dados e OTG compatíveis; não grava a ROM no celular que executa o ROMFlow.
+> **ROMFlow 0.1.16 — por Técnico Root.** Aplicativo independente. A instalação exige outro aparelho em fastboot, cabo de dados e OTG compatíveis; não grava a ROM no celular que executa o ROMFlow.
 
 ## Novidades da versão 0.1.16
 
@@ -126,7 +126,7 @@ O Pix é opcional. O aplicativo não acessa a conta bancária do usuário nem ex
 
 ## Atualizações
 
-A edição do GitHub consulta novas versões em Releases ao abrir ou retornar ao aplicativo. Quando encontra uma versão mais recente, a atualização é obrigatória para continuar: é possível atualizar ou sair. A exigência já detectada permanece salva mesmo sem conexão. Se a consulta falhar antes de detectar uma atualização, o app permite usar a versão instalada. Ao iniciar a atualização, o APK é baixado e verificado por SHA-256, pacote, versão e assinatura. O Android pede confirmação para instalar. O canal consulta a Release pública mais recente deste repositório. Quem usa a versão 0.1.9 ou anterior precisa instalar a 0.1.10 pelo link uma vez para migrar ao novo endereço de atualização. Não é necessário desinstalar as edições com a assinatura definitiva.
+A edição do GitHub consulta novas versões em Releases ao abrir ou retornar ao aplicativo. Quando encontra uma versão mais recente, a atualização é obrigatória para continuar: é possível atualizar ou sair. A exigência já detectada permanece salva mesmo sem conexão. Se a consulta falhar antes de detectar uma atualização, o app permite usar a versão instalada. Ao iniciar a atualização, o APK é baixado e verificado por SHA-256, pacote, versão e assinatura. O Android pede confirmação para instalar. O canal consulta a Release pública mais recente deste repositório. Quem usa a versão 0.1.9 ou anterior precisa instalar a versão atual pelo link de download deste repositório para migrar ao novo endereço de atualização. Não é necessário desinstalar as edições com a assinatura definitiva.
 
 A partir da versão 0.1.15, a tela de atualização destaca as novidades da versão disponível. Ao abrir uma versão recém-instalada, um resumo das novidades aparece uma vez e também funciona sem internet. A tela Sobre não precisa de botões manuais de atualização: a verificação continua automática, e a tela obrigatória permite retomar a instalação já baixada.
 
