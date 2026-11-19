@@ -1,12 +1,12 @@
 # ROMFlow
 
-**Download de firmwares no Android — por Técnico Root.**
+**Baixe, prepare e instale ROMs stock pelo Android — por Técnico Root.**
 
-Consulte pacotes de firmware e acompanhe o download em uma interface simples, sem precisar instalar Termux ou executar comandos.
+Duas abas: **Baixar ROM** e **Instalar ROM**. Consulte o firmware, extraia o ZIP, confira os arquivos e instale em outro Motorola por USB/OTG, sem Termux ou computador.
 
 ![Ícone do ROMFlow](docs/icone-512.png)
 
-> **ROMFlow 0.1.13 — por Técnico Root.** Aplicativo independente para consultar e baixar pacotes de firmware pelo Android. Não instala nem grava a ROM no aparelho.
+> **ROMFlow 0.1.14 — por Técnico Root.** Aplicativo independente. A instalação exige outro aparelho em fastboot, cabo de dados e OTG compatíveis; não grava a ROM no celular que executa o ROMFlow.
 
 ## O que o aplicativo faz
 
@@ -17,7 +17,15 @@ Consulte pacotes de firmware e acompanhe o download em uma interface simples, se
 - Inclui ajuda ilustrada para localizar modelo e IMEI.
 - Continua o download pelo gerenciador do Android quando você sai da tela.
 
-O app baixa o pacote; a instalação ou gravação da ROM é uma etapa separada. O serviço pode não disponibilizar todos os modelos, versões ou canais. A conclusão da transferência não certifica a compatibilidade da ROM para gravação nem sua integridade criptográfica.
+- Extrai o ZIP dentro do aplicativo em uma pasta nova.
+- Lê o flashfile.xml, verifica os checksums dos arquivos e permite salvar **flash-romflow.sh**.
+- Reconhece outro Motorola em fastboot e instala diretamente por USB/OTG.
+- Permite escolher instalação limpa ou tentar manter dados e reiniciar automaticamente após sucesso.
+- Mostra um guia ilustrado e o progresso da gravação.
+
+O serviço pode não disponibilizar todos os modelos, versões ou canais. Produto e checksums não comprovam compatibilidade de variante ou downgrade. O aplicativo não desbloqueia nem bloqueia o bootloader.
+
+**Teste confirmado pelo autor:** Moto G84 (bangkk), 23 arquivos, 27 etapas no modo tentar manter dados; Android iniciou, arquivos, senha e Wi-Fi foram preservados e o root foi removido. O reinício automático também foi testado. Outros modelos, outras ROMs e instalação limpa não foram validados por esse teste. Não há garantia geral de preservação dos dados; faça backup.
 
 ## Download
 
@@ -38,11 +46,24 @@ O GitHub é o canal de distribuição direta. A edição da VIVO está prevista 
 
 Use somente identificadores de aparelhos próprios ou que você tenha autorização para consultar. Se o login não concluir, não publique URLs de retorno: elas podem conter um código de sessão.
 
+## Instalar em outro Motorola
+
+1. Faça backup e confirme modelo, variante e versão compatíveis da ROM. Não use este fluxo para custom ROM.
+2. Abra **Instalar ROM**, selecione o ZIP e extraia, ou selecione a pasta já extraída.
+3. Desligue o aparelho de destino e entre em fastboot com Volume para baixo + Ligar. Conecte-o por cabo USB/OTG ao celular que executa o ROMFlow.
+4. Toque em **Identificar aparelho em fastboot** e autorize o acesso USB no Android.
+5. Confira o XML e os arquivos, revise as etapas e, opcionalmente, salve o script. Salvar o script não é necessário para instalar pelo app.
+6. Escolha instalação limpa ou tentar manter dados. Marque o reinício automático se desejar e confirme por escrito **INSTALAR**.
+7. Acompanhe a conclusão sem desconectar o cabo. Se houver erro, a sequência para sem repetição automática. Confira a inicialização do Android após a conclusão.
+
+A instalação limpa apaga dados previstos no XML. Tentar manter dados omite operações de userdata, metadata e carrier, mas não garante preservação. Apagamentos de modemst1/modemst2 exigem autorização separada. Imagens acima do limite de transferência do aparelho são recusadas antes da gravação; não há fracionamento automático.
+
 ## Requisitos
 
 - Android 10 ou superior.
 - Conta compatível com o serviço Motorola/Lenovo.
-- Internet e espaço para pacotes que podem ocupar vários gigabytes.
+- Internet e espaço para o ZIP e os arquivos extraídos, que podem ocupar vários gigabytes.
+- Para instalar: USB Host/OTG no celular controlador, outro Motorola em fastboot e bootloader que permita gravar o firmware escolhido.
 
 Não exige root e não lê o IMEI automaticamente. A interface é em português.
 
@@ -51,6 +72,8 @@ Não exige root e não lê o IMEI automaticamente. A interface é em português.
 O projeto pretende se sustentar com publicidade AdMob e contribuições voluntárias por Pix. As edições assinadas de distribuição usam o bloco real do criador. A disponibilidade de anúncios e a geração de receita dependem da plataforma e de sua revisão; a preparação de um APK não é uma aprovação.
 
 A partir da versão 0.1.11, o aplicativo pode exibir um anúncio após a confirmação do download e antes de iniciar a transferência. Ao fechar o anúncio, o download começa automaticamente; se nenhum estiver pronto ou houver falha, ele começa normalmente. Também há uma oportunidade na conclusão acompanhada em primeiro plano, com intervalo mínimo de um minuto entre exibições para evitar anúncios seguidos em downloads rápidos. Um download que terminou fora da tela não abre anúncio atrasado. Em Sobre, Diagnóstico dos anúncios mostra o estado do carregamento e erros técnicos locais, sem IMEI, modelo ou sessão. Publicar no GitHub não garante aprovação nem veiculação no AdMob.
+
+Na instalação, há uma oportunidade de anúncio ao avançar da conferência para a revisão. Nenhum anúncio é exibido durante a gravação USB. O anúncio indisponível não bloqueia o fluxo.
 
 O Pix é opcional. O aplicativo não acessa a conta bancária do usuário nem executa ou confirma pagamentos. Na versão 0.1.13, o QR Code e o Copia e Cola incluem a descrição **Apoio ao ROMFlow** e o identificador **ROMFLOWAPOIO20261118**. No teste do autor, o identificador apareceu no comprovante da conta Nubank recebedora; a apresentação pode variar em outros bancos.
 
@@ -70,7 +93,17 @@ Leia a [política de privacidade](docs/PRIVACIDADE.md), também disponível offl
 
 ## Capturas de tela
 
-Capturas reais da versão 0.1.10, enviadas pelo autor após consulta e download concluído no celular.
+As telas de instalação abaixo são capturas reais dos testes beta que originaram a versão 0.1.14. Mostram a conferência, escolha do modo, gravação e conclusão. Avisos de versão de teste nas imagens pertencem à beta. O teste completo e o reinício foram confirmados pelo autor no Moto G84.
+
+| Conferência dos arquivos | Escolha do modo |
+| --- | --- |
+| ![Arquivos verificados](docs/capturas/instalacao-conferencia.png) | ![Limpa ou manter dados](docs/capturas/instalacao-modo.png) |
+
+| Gravação por USB | Etapas concluídas |
+| --- | --- |
+| ![Instalação em andamento](docs/capturas/instalacao-usb.png) | ![Conclusão da gravação](docs/capturas/instalacao-concluida.png) |
+
+Telas da consulta e download da versão 0.1.10, mantidas como referência dessas funções:
 
 | Início | Consulta | Resultados |
 | --- | --- | --- |
@@ -95,3 +128,4 @@ A documentação será atualizada conforme o estado real de publicação e aprov
 ## Autenticidade da distribuição
 
 Os APKs da distribuição do autor usam a assinatura definitiva do autor, código ofuscado com R8 e verificação local de assinatura. Essas medidas dificultam alterações, mas não impedem toda engenharia reversa. Este repositório público distribui APKs e documentação; a chave privada, o código-fonte do aplicativo e os mapas de ofuscação não são publicados.
+

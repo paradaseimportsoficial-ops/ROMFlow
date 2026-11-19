@@ -1,6 +1,6 @@
 # Política de privacidade — ROMFlow
 
-Vigente para a versão 0.1.10 · 18 de novembro de 2026
+Vigente para a versão 0.1.14 · 18 de novembro de 2026
 
 ## Quem desenvolve o aplicativo
 
@@ -21,6 +21,10 @@ O modelo e o IMEI digitados ficam na memória durante o fluxo de consulta; o app
 ## Downloads de ROM
 
 O arquivo é baixado diretamente do endereço fornecido pelo catálogo por meio do gerenciador de downloads do Android. As ROMs ficam em Downloads/ROMFlow e podem continuar no aparelho após a desinstalação do app. Ao conectar aos serviços, os servidores de destino recebem dados técnicos da conexão, como endereço IP. O criador não hospeda as ROMs nem mantém um servidor próprio para receber modelo, IMEI ou sessão.
+
+## Extração e instalação por USB/OTG
+
+O recurso de instalação lê os arquivos da ROM e os checksums na pasta escolhida. Com sua autorização, consulta produto e número de série do aparelho conectado por USB/OTG; a tela mostra apenas o final da identificação. A preparação temporária e o registro da última execução ficam privados no celular controlador e não são enviados ao criador nem ao SDK de anúncios pelo código do app. A preparação temporária é removida após a execução. Os arquivos extraídos e scripts exportados permanecem na pasta escolhida, inclusive após desinstalar. Limpar os dados do app remove o registro privado. A instalação grava partições do outro aparelho e pode apagar seus dados conforme a opção escolhida; faça backup.
 
 ## Publicidade e escolhas de privacidade
 
@@ -48,3 +52,4 @@ Dúvidas sobre o aplicativo e solicitações relacionadas aos dados sob responsa
 
 ## Políticas e documentos dos serviços
 
+[Privacidade do Google](https://policies.google.com/privacy)[Privacidade Lenovo](https://www.lenovo.com/br/pt/privacy/)[Privacidade GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)[Contato da marca pelo WhatsApp](https://wa.me/5599985042070)
