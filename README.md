@@ -115,7 +115,7 @@ Telas da consulta e download da versão 0.1.10, mantidas como referência dessas
 
 ## Autoria e créditos
 
-Desenvolvido por **Técnico Root — Ivanildo Sousa Castro**. Projeto independente, não oficial, sem vínculo declarado com Motorola ou Lenovo. As marcas pertencem aos respectivos titulares.
+Desenvolvido por **Técnico Root — Ivanildo Sousa**. Projeto independente, não oficial, sem vínculo declarado com Motorola ou Lenovo. As marcas pertencem aos respectivos titulares.
 
 A base técnica foi adaptada de [Moto Firmware Downloader, de JoshRob](https://github.com/JoshRob297/moto-firmware-downloader), revisão b5ea93a (v1.3.4), sob [licença MIT](LICENSE-MFD.txt). Essa licença cobre o código do projeto de origem e não equivale a autorização para o serviço ou os arquivos Motorola/Lenovo.
 
