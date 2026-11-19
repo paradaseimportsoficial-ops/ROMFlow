@@ -142,32 +142,21 @@ Leia a [política de privacidade](docs/PRIVACIDADE.md), também disponível offl
 
 ## Capturas de tela
 
-Busca por fastboot: capturas reais da beta 0.1.15 enviada para teste e validada pelo autor no Moto G84. A versão definitiva inclui o mesmo fluxo.
+Capturas reais da versão **0.1.16**, enviadas pelo autor. A navegação reúne **Baixar ROM**, **Instalar ROM** e **Avançado**; a área avançada permanece **BETA**.
 
-| Busca automática e manual | ROM retornada pela consulta |
+| Baixar ROM | Instalar ROM |
 | --- | --- |
-| ![Opções de consulta](docs/capturas/consulta-fastboot.png) | ![ROM do G84 encontrada](docs/capturas/resultado-fastboot.png) |
+| ![Tela inicial do ROMFlow 0.1.16 com as três abas](docs/capturas/inicio-016.png) | ![Instalação stock por USB e preparação da pasta](docs/capturas/instalar-016.png) |
 
-
-As telas de instalação abaixo são capturas reais dos testes beta que originaram a versão 0.1.14. Mostram a conferência, escolha do modo, gravação e conclusão. Avisos de versão de teste nas imagens pertencem à beta. O teste completo e o reinício foram confirmados pelo autor no Moto G84.
-
-| Conferência dos arquivos | Escolha do modo |
+| Avançado · BETA | Operações disponíveis |
 | --- | --- |
-| ![Arquivos verificados](docs/capturas/instalacao-conferencia.png) | ![Limpa ou manter dados](docs/capturas/instalacao-modo.png) |
+| ![USB avançado com importação de BAT, SH e XML](docs/capturas/avancado-016.png) | ![Flash, boot temporário, ADB sideload e comando fastboot manual](docs/capturas/operacoes-016.png) |
 
-| Gravação por USB | Etapas concluídas |
+| Sobre o aplicativo | Consulta com root opcional |
 | --- | --- |
-| ![Instalação em andamento](docs/capturas/instalacao-usb.png) | ![Conclusão da gravação](docs/capturas/instalacao-concluida.png) |
+| ![Sobre, ajuda e opção de consultar este celular com root](docs/capturas/sobre-016.png) | ![Leitura opcional de dados do próprio celular com root](docs/capturas/root-opcional-016.png) |
 
-Telas da consulta e download da versão 0.1.10, mantidas como referência dessas funções:
-
-| Início | Consulta | Resultados |
-| --- | --- | --- |
-| ![Início](docs/capturas/inicio.png) | ![Consulta sem IMEI](docs/capturas/consulta.png) | ![Resultados](docs/capturas/resultados.png) |
-
-| Download em andamento | Download concluído |
-| --- | --- |
-| ![Progresso](docs/capturas/download.png) | ![Concluído](docs/capturas/concluido.png) |
+As imagens mostram a interface. **Não comprovam validação física das novas operações da aba Avançado nem leitura bem-sucedida de IMEI com root.** O teste stock confirmado no Moto G84 está descrito acima.
 
 ## Autoria e créditos
 
