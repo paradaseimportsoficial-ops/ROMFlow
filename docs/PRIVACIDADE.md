@@ -1,6 +1,6 @@
 # Política de privacidade — ROMFlow
 
-Vigente para a versão 0.1.15 · 18 de novembro de 2026
+Vigente para a versão 0.1.16 · 19 de novembro de 2026
 
 ## Quem desenvolve o aplicativo
 
@@ -9,6 +9,10 @@ ROMFlow é um projeto independente de Técnico Root, de Ivanildo Sousa. Não é 
 ## Para que os dados são usados
 
 O aplicativo permite consultar o catálogo Motorola/Lenovo e baixar o pacote de firmware indicado pelo serviço. O modelo e o IMEI podem ser digitados pelo usuário ou lidos por USB/OTG, e são enviados ao serviço Motorola/Lenovo para identificar o aparelho e consultar os pacotes. O app pode ler modelo e IMEI de outro Motorola conectado por USB/OTG em fastboot, quando você seleciona essa opção e autoriza o acesso USB no Android. A leitura é apenas de identificação, sem gravação, apagamento ou reinício; o número completo não aparece na tela de leitura. Ao tocar em Consultar, esses dados são enviados ao serviço Motorola/Lenovo e usados somente em memória, sem histórico ou envio ao criador e aos anúncios. Se o bootloader não informar os dados necessários, complete os campos manualmente. Use apenas identificadores de aparelhos próprios ou cujo titular tenha autorizado a consulta.
+
+## Leitura opcional com root — edição do GitHub
+
+Em Sobre, Consultar este celular com root permite tentar ler modelo e IMEI do próprio aparelho. É opcional: não solicita root na inicialização e só tenta a leitura ao tocar em Ler dados com root. A autorização e a revogação são feitas pelo gerenciador de root. Os comandos são fixos e somente de leitura; não há terminal persistente, logs com identificadores ou histórico desses dados. O IMEI aparece mascarado na conferência. Ao confirmar Consultar, os dados são enviados à Motorola/Lenovo. Pode ser necessário completar manualmente mesmo com root. A função não instala a ROM no próprio celular. A edição para loja não contém essa função.
 
 ## Conta, login e sessão
 
@@ -25,6 +29,10 @@ O arquivo é baixado diretamente do endereço fornecido pelo catálogo por meio 
 ## Extração e instalação por USB/OTG
 
 O recurso de instalação lê os arquivos da ROM e os checksums na pasta escolhida. Com sua autorização, consulta produto e número de série do aparelho conectado por USB/OTG; a tela mostra apenas o final da identificação. A preparação temporária e o registro da última execução ficam privados no celular controlador e não são enviados ao criador nem ao SDK de anúncios pelo código do app. A preparação temporária é removida após a execução. Os arquivos extraídos e scripts exportados permanecem na pasta escolhida, inclusive após desinstalar. Limpar os dados do app remove o registro privado. A instalação grava partições do outro aparelho e pode apagar seus dados conforme a opção escolhida; faça backup.
+
+## USB avançado e instaladores
+
+Ao selecionar uma pasta e instalador BAT/SH/XML, imagem ou ZIP, o aplicativo pode preparar cópias temporárias privadas dos arquivos necessários antes de enviá-los ao outro aparelho por USB autorizado. As cópias são removidas após o encerramento; interrupções do processo podem deixá-las até a limpeza posterior. O resultado mais recente da execução fica salvo localmente. Esses arquivos não são enviados ao criador ou aos anúncios por esse fluxo.
 
 ## Publicidade e escolhas de privacidade
 
@@ -48,7 +56,7 @@ Use Sair da conta neste app para apagar a sessão técnica local. Limpar os dado
 
 ## Contato, público e alterações
 
-Dúvidas sobre o aplicativo e solicitações relacionadas aos dados sob responsabilidade do criador podem ser encaminhadas ao contato informado acima. O aplicativo foi pensado para proprietários adultos de aparelhos e profissionais de assistência; não é direcionado a crianças. Alterações relevantes nesta política serão informadas na versão correspondente do aplicativo. Data desta redação: 18 de novembro de 2026. Contato de suporte e privacidade: paradaseimportsoficial@gmail.com.
+Dúvidas sobre o aplicativo e solicitações relacionadas aos dados sob responsabilidade do criador podem ser encaminhadas ao contato informado acima. O aplicativo foi pensado para proprietários adultos de aparelhos e profissionais de assistência; não é direcionado a crianças. Alterações relevantes nesta política serão informadas na versão correspondente do aplicativo. Data desta redação: 19 de novembro de 2026. Contato de suporte e privacidade: paradaseimportsoficial@gmail.com.
 
 ## Políticas e documentos dos serviços
 
