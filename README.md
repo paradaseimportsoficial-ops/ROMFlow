@@ -6,15 +6,21 @@ Três abas: **Baixar ROM**, **Instalar ROM** e **Avançado**. Consulte o firmwar
 
 ![Ícone do ROMFlow](docs/icone-512.png)
 
-> **ROMFlow 0.1.16 — por Técnico Root.** Aplicativo independente. A instalação exige outro aparelho em fastboot, cabo de dados e OTG compatíveis; não grava a ROM no celular que executa o ROMFlow.
+> **ROMFlow 0.1.17 — por Técnico Root.** Aplicativo independente. A instalação exige outro aparelho em fastboot, cabo de dados e OTG compatíveis; não grava a ROM no celular que executa o ROMFlow.
 
-## Novidades da versão 0.1.16
+## Novidades da versão 0.1.17
+
+### Modelo automático sem root
+
+Ao abrir a consulta de ROM, o aplicativo tenta preencher o **código XT do próprio celular**, sem pedir root. Confira o modelo e informe o **IMEI manualmente**. O código depende do que o Android disponibilizar; se não houver um XT válido, complete o campo. Para consultar outro aparelho, edite o modelo ou use o reconhecimento por fastboot USB/OTG.
+
+O preenchimento automático foi testado e confirmado pelo autor. A opção de tentar ler modelo e IMEI com root continua em **Sobre**, na edição do GitHub; o IMEI com root ainda pode não estar disponível.
 
 A aba **Avançado permanece BETA**: suas funções de gravação novas ainda não foram validadas fisicamente. A consulta/download e o fluxo stock mantêm os testes já descritos abaixo. O acesso root é opcional e a leitura do IMEI depende da ROM.
 
 ### Root é uma alternativa, não uma obrigação
 
-Na edição do GitHub 0.1.16, entre em **Sobre → Consultar este celular com root** se quiser tentar identificar o **próprio celular que executa o ROMFlow** para consultar e baixar sua ROM.
+Na edição do GitHub 0.1.17, entre em **Sobre → Consultar este celular com root** se quiser tentar identificar o **próprio celular que executa o ROMFlow** para consultar e baixar sua ROM.
 
 1. Toque em **Ler dados com root** somente se quiser usar essa alternativa.
 2. Autorize o ROMFlow no seu gerenciador de root; em alguns gerenciadores é necessário liberar o app manualmente.
@@ -46,7 +52,8 @@ O botão **Relatar erro ou sugestão** abre um rascunho no aplicativo de e-mail 
 ## O que o aplicativo faz
 
 - Abre o login Motorola/Lenovo no navegador externo, inclusive para quem usa conta Google.
-- Consulta o catálogo usando o código do modelo e o IMEI digitados ou lidos por USB/OTG de outro Motorola em fastboot.
+- Sugere automaticamente o modelo XT do próprio celular, sem root, quando o Android o disponibiliza.
+- Consulta o catálogo com o modelo conferido e IMEI informado, ou com os dados lidos de outro Motorola em fastboot por USB/OTG.
 - Apresenta os pacotes retornados e permite escolher qual baixar.
 - Mostra o andamento e salva o ZIP em **Downloads/ROMFlow**.
 - Inclui ajuda ilustrada para localizar modelo e IMEI.
@@ -75,7 +82,7 @@ O GitHub é o canal de distribuição direta. A edição da VIVO está prevista 
 1. Abra o aplicativo e escolha conectar a conta.
 2. Conclua o login na página Motorola/Lenovo pelo navegador. Se a página apresentar o botão de abrir o cliente Software Fix, toque nele para retornar ao aplicativo.
 3. Confira se a conta foi reconhecida.
-4. Use a ajuda ilustrada para encontrar o código XT nas configurações e o IMEI pelas configurações ou digitando `*#06#` no teclado do app Telefone. Digite o código completo do modelo (por exemplo, o código XT que aparece nas informações do aparelho) e o IMEI. O botão de ajuda mostra onde encontrá-los.
+4. Confira o modelo preenchido automaticamente, se disponível, e informe o IMEI. Para outro aparelho, edite o modelo ou use fastboot. Use a ajuda ilustrada para encontrar o código XT nas configurações e o IMEI pelas configurações ou digitando `*#06#` no teclado do app Telefone. Digite o código completo do modelo (por exemplo, o código XT que aparece nas informações do aparelho) e o IMEI. O botão de ajuda mostra onde encontrá-los.
 5. Consulte os pacotes, confira as informações e escolha o download.
 6. Acompanhe em Meus downloads. O ZIP ficará disponível em Downloads/ROMFlow.
 
@@ -142,7 +149,7 @@ Leia a [política de privacidade](docs/PRIVACIDADE.md), também disponível offl
 
 ## Capturas de tela
 
-Capturas reais da versão **0.1.16**, enviadas pelo autor. A navegação reúne **Baixar ROM**, **Instalar ROM** e **Avançado**; a área avançada permanece **BETA**.
+Capturas reais da versão **0.1.16**, enviadas pelo autor, que ilustram a interface mantida na 0.1.17. A navegação reúne **Baixar ROM**, **Instalar ROM** e **Avançado**; a área avançada permanece **BETA**.
 
 | Baixar ROM | Instalar ROM |
 | --- | --- |
