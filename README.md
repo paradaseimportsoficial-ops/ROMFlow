@@ -1,12 +1,24 @@
-# ROMFlow
+# ROMFlow — ROM stock Motorola pelo Android
 
-**Baixe, prepare e instale ROMs stock pelo Android — por Técnico Root.**
+**Aplicativo Android para consultar, baixar e instalar o sistema original de celulares Motorola, sem computador.**
 
-Três abas: **Baixar ROM**, **Instalar ROM** e **Avançado**. Consulte o firmware, extraia o ZIP, confira os arquivos e instale em outro Motorola por USB/OTG, sem Termux ou computador.
+O **ROMFlow**, por **Técnico Root**, busca pacotes de **ROM stock (firmware original) Motorola** no serviço Motorola/Lenovo. Também permite preparar os arquivos e fazer a **instalação (flash) em outro Motorola**, conectado ao celular com o aplicativo por cabo **USB/OTG**.
 
-![Ícone do ROMFlow](docs/icone-512.png)
+**[📥 Baixar o APK mais recente](https://github.com/paradaseimportsoficial-ops/ROMFlow/releases/latest)** · [Como usar](#como-usar) · [Capturas de tela](#capturas-de-tela)
 
-> **ROMFlow 0.1.17 — por Técnico Root.** Aplicativo independente. A instalação exige outro aparelho em fastboot, cabo de dados e OTG compatíveis; não grava a ROM no celular que executa o ROMFlow.
+| Quero… | Onde faço |
+| --- | --- |
+| Baixar a ROM original de um Motorola | **Baixar ROM**: entre na conta Motorola/Lenovo e consulte pelo modelo XT e IMEI, ou identifique outro aparelho em fastboot por USB/OTG. |
+| Instalar a ROM stock em outro Motorola | **Instalar ROM**: extraia o pacote, confira o plano e faça o flash por USB/OTG. |
+| Usar imagens avulsas, boot temporário, sideload ou scripts compatíveis | **Avançado · BETA**: operações para outro aparelho; confira os limites descritos abaixo. |
+
+**Para baixar**, basta um celular com Android 10 ou superior, conta Motorola/Lenovo, internet e espaço livre. **Para instalar**, são necessários dois aparelhos: o celular que executa o ROMFlow e o Motorola de destino em fastboot, além de cabo/OTG compatíveis e bootloader que permita a gravação.
+
+A consulta manual e as funções por USB **não exigem root**. O app não instala a ROM no próprio celular em que está aberto. A aba **Avançado permanece BETA**; não há suporte irrestrito a qualquer aparelho ou custom ROM.
+
+<img src="docs/icone-512.png" width="96" alt="Ícone do ROMFlow">
+
+> **Versão atual: 0.1.17.** Projeto independente, não oficial e sem vínculo com Motorola ou Lenovo. O catálogo e a compatibilidade dependem do modelo, variante e pacote escolhido.
 
 ## Novidades da versão 0.1.17
 
