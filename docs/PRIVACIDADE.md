@@ -1,6 +1,6 @@
 # Política de privacidade — ROMFlow
 
-Vigente para a versão 0.1.14 · 18 de novembro de 2026
+Vigente para a versão 0.1.15 · 18 de novembro de 2026
 
 ## Quem desenvolve o aplicativo
 
@@ -8,7 +8,7 @@ ROMFlow é um projeto independente de Técnico Root, de Ivanildo Sousa. Não é 
 
 ## Para que os dados são usados
 
-O aplicativo permite consultar o catálogo Motorola/Lenovo e baixar o pacote de firmware indicado pelo serviço. O modelo e o IMEI são informados manualmente pelo usuário e enviados ao serviço Motorola/Lenovo para identificar o aparelho e consultar os pacotes. O app não lê o IMEI automaticamente. Use apenas identificadores de aparelhos próprios ou cujo titular tenha autorizado a consulta.
+O aplicativo permite consultar o catálogo Motorola/Lenovo e baixar o pacote de firmware indicado pelo serviço. O modelo e o IMEI podem ser digitados pelo usuário ou lidos por USB/OTG, e são enviados ao serviço Motorola/Lenovo para identificar o aparelho e consultar os pacotes. O app pode ler modelo e IMEI de outro Motorola conectado por USB/OTG em fastboot, quando você seleciona essa opção e autoriza o acesso USB no Android. A leitura é apenas de identificação, sem gravação, apagamento ou reinício; o número completo não aparece na tela de leitura. Ao tocar em Consultar, esses dados são enviados ao serviço Motorola/Lenovo e usados somente em memória, sem histórico ou envio ao criador e aos anúncios. Se o bootloader não informar os dados necessários, complete os campos manualmente. Use apenas identificadores de aparelhos próprios ou cujo titular tenha autorizado a consulta.
 
 ## Conta, login e sessão
 

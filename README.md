@@ -6,12 +6,12 @@ Duas abas: **Baixar ROM** e **Instalar ROM**. Consulte o firmware, extraia o ZIP
 
 ![Ícone do ROMFlow](docs/icone-512.png)
 
-> **ROMFlow 0.1.14 — por Técnico Root.** Aplicativo independente. A instalação exige outro aparelho em fastboot, cabo de dados e OTG compatíveis; não grava a ROM no celular que executa o ROMFlow.
+> **ROMFlow 0.1.15 — por Técnico Root.** Aplicativo independente. A instalação exige outro aparelho em fastboot, cabo de dados e OTG compatíveis; não grava a ROM no celular que executa o ROMFlow.
 
 ## O que o aplicativo faz
 
 - Abre o login Motorola/Lenovo no navegador externo, inclusive para quem usa conta Google.
-- Consulta o catálogo usando o código do modelo e o IMEI informados pelo usuário.
+- Consulta o catálogo usando o código do modelo e o IMEI digitados ou lidos por USB/OTG de outro Motorola em fastboot.
 - Apresenta os pacotes retornados e permite escolher qual baixar.
 - Mostra o andamento e salva o ZIP em **Downloads/ROMFlow**.
 - Inclui ajuda ilustrada para localizar modelo e IMEI.
@@ -44,6 +44,18 @@ O GitHub é o canal de distribuição direta. A edição da VIVO está prevista 
 5. Consulte os pacotes, confira as informações e escolha o download.
 6. Acompanhe em Meus downloads. O ZIP ficará disponível em Downloads/ROMFlow.
 
+### Buscar ROM pelo fastboot, sem digitar modelo e IMEI
+
+1. Entre na conta Motorola/Lenovo e abra **Buscar ROM**.
+2. Toque em **Reconhecer por fastboot · USB/OTG**.
+3. Coloque o outro Motorola em fastboot e conecte-o por cabo de dados/OTG ao celular com ROMFlow.
+4. Toque em **Reconhecer aparelho** e autorize o acesso USB no Android.
+5. Confira o modelo e o final do IMEI na tela; toque em **Consultar ROMs deste aparelho** para buscar os pacotes.
+
+A leitura não grava, apaga ou reinicia. Se o bootloader não fornecer todos os dados válidos, complete os campos manualmente. A conta e a conexão à internet continuam necessárias para consultar o catálogo. Modelo e IMEI só são enviados ao serviço Motorola/Lenovo ao consultar; o código do app não os envia ao criador nem aos anúncios e não os salva em histórico.
+
+**Teste confirmado na beta 0.1.15:** Moto G84 (XT2347-1) reconhecido por USB em fastboot, modelo e IMEI lidos, catálogo retornou a ROM BANGKK_G nos canais retbr/retla, sem digitar os identificadores. A consulta manual permanece disponível.
+
 Use somente identificadores de aparelhos próprios ou que você tenha autorização para consultar. Se o login não concluir, não publique URLs de retorno: elas podem conter um código de sessão.
 
 ## Instalar em outro Motorola
@@ -65,7 +77,7 @@ A instalação limpa apaga dados previstos no XML. Tentar manter dados omite ope
 - Internet e espaço para o ZIP e os arquivos extraídos, que podem ocupar vários gigabytes.
 - Para instalar: USB Host/OTG no celular controlador, outro Motorola em fastboot e bootloader que permita gravar o firmware escolhido.
 
-Não exige root e não lê o IMEI automaticamente. A interface é em português.
+Não exige root. O modelo e IMEI podem ser digitados ou lidos de outro Motorola em fastboot, mediante autorização USB. A interface é em português.
 
 ## Anúncios e apoio
 
@@ -81,17 +93,26 @@ O Pix é opcional. O aplicativo não acessa a conta bancária do usuário nem ex
 
 A edição do GitHub consulta novas versões em Releases ao abrir ou retornar ao aplicativo. Quando encontra uma versão mais recente, a atualização é obrigatória para continuar: é possível atualizar ou sair. A exigência já detectada permanece salva mesmo sem conexão. Se a consulta falhar antes de detectar uma atualização, o app permite usar a versão instalada. Ao iniciar a atualização, o APK é baixado e verificado por SHA-256, pacote, versão e assinatura. O Android pede confirmação para instalar. O canal consulta a Release pública mais recente deste repositório. Quem usa a versão 0.1.9 ou anterior precisa instalar a 0.1.10 pelo link uma vez para migrar ao novo endereço de atualização. Não é necessário desinstalar as edições com a assinatura definitiva.
 
+A partir da versão 0.1.15, a tela de atualização destaca as novidades da versão disponível. Ao abrir uma versão recém-instalada, um resumo das novidades aparece uma vez e também funciona sem internet. A tela Sobre não precisa de botões manuais de atualização: a verificação continua automática, e a tela obrigatória permite retomar a instalação já baixada.
+
 A edição de loja recebe atualizações pela loja e não inclui a permissão para instalar APKs. As duas edições mantêm o mesmo nome de pacote e certificado definitivo. A troca entre canais também depende da versão e das políticas de assinatura da loja.
 
 As versões antigas de teste têm outro certificado. A primeira migração para a assinatura definitiva exige remover a edição de teste e entrar novamente na conta. As edições definitivas 0.1.7 e posteriores usam a mesma assinatura e podem receber versões compatíveis por cima, sem desinstalar.
 
 ## Privacidade
 
-A sessão técnica é armazenada de forma criptografada no aparelho. O modelo e o IMEI digitados são enviados ao serviço Motorola/Lenovo para a consulta; não são gravados deliberadamente pelo app em histórico ou relatórios do criador. O SDK de anúncios trata seus próprios dados de publicidade/diagnóstico.
+A sessão técnica é armazenada de forma criptografada no aparelho. O modelo e o IMEI digitados ou lidos por USB são enviados ao serviço Motorola/Lenovo para a consulta; não são gravados deliberadamente pelo app em histórico ou relatórios do criador. O SDK de anúncios trata seus próprios dados de publicidade/diagnóstico.
 
 Leia a [política de privacidade](docs/PRIVACIDADE.md), também disponível offline no aplicativo. E-mail de suporte: [paradaseimportsoficial@gmail.com](mailto:paradaseimportsoficial@gmail.com).
 
 ## Capturas de tela
+
+Busca por fastboot: capturas reais da beta 0.1.15 enviada para teste e validada pelo autor no Moto G84. A versão definitiva inclui o mesmo fluxo.
+
+| Busca automática e manual | ROM retornada pela consulta |
+| --- | --- |
+| ![Opções de consulta](docs/capturas/consulta-fastboot.png) | ![ROM do G84 encontrada](docs/capturas/resultado-fastboot.png) |
+
 
 As telas de instalação abaixo são capturas reais dos testes beta que originaram a versão 0.1.14. Mostram a conferência, escolha do modo, gravação e conclusão. Avisos de versão de teste nas imagens pertencem à beta. O teste completo e o reinício foram confirmados pelo autor no Moto G84.
 
