@@ -1,8 +1,10 @@
-# ROMFlow — ROM stock Motorola pelo Android
+# ROMFlow — ROMs Motorola e ferramentas USB avançadas
 
-**Aplicativo Android para consultar, baixar e instalar o sistema original de celulares Motorola, sem computador.**
+**Aplicativo Android para baixar e instalar ROM stock Motorola e executar operações avançadas por USB/OTG, sem computador.**
 
 O **ROMFlow**, por **Técnico Root**, busca pacotes de **ROM stock (firmware original) Motorola** no serviço Motorola/Lenovo. Também permite preparar os arquivos e fazer a **instalação (flash) em outro Motorola**, conectado ao celular com o aplicativo por cabo **USB/OTG**.
+
+Além do fluxo de ROM stock Motorola, a aba **Avançado · BETA** permite instalar **custom ROMs com instaladores BAT/SH/XML compatíveis**, fazer **flash de imagens avulsas**, iniciar uma imagem por **boot temporário** (por exemplo, um recovery como TWRP, quando suportado pelo aparelho) e enviar **ZIP pelo ADB sideload do recovery**. Essas operações são realizadas em outro aparelho por USB/OTG e dependem do protocolo, do arquivo e do guia específico da ROM. Não há suporte universal a qualquer celular, custom ROM ou script.
 
 **[📥 Baixar o APK mais recente](https://github.com/paradaseimportsoficial-ops/ROMFlow/releases/latest)** · [Como usar](#como-usar) · [Capturas de tela](#capturas-de-tela)
 
@@ -10,7 +12,7 @@ O **ROMFlow**, por **Técnico Root**, busca pacotes de **ROM stock (firmware ori
 | --- | --- |
 | Baixar a ROM original de um Motorola | **Baixar ROM**: entre na conta Motorola/Lenovo e consulte pelo modelo XT e IMEI, ou identifique outro aparelho em fastboot por USB/OTG. |
 | Instalar a ROM stock em outro Motorola | **Instalar ROM**: extraia o pacote, confira o plano e faça o flash por USB/OTG. |
-| Usar imagens avulsas, boot temporário, sideload ou scripts compatíveis | **Avançado · BETA**: operações para outro aparelho; confira os limites descritos abaixo. |
+| Instalar custom ROM com script compatível, usar imagens avulsas, boot temporário ou sideload | **Avançado · BETA**: operações para outro aparelho; confira os limites descritos abaixo. |
 
 **Para baixar**, basta um celular com Android 10 ou superior, conta Motorola/Lenovo, internet e espaço livre. **Para instalar**, são necessários dois aparelhos: o celular que executa o ROMFlow e o Motorola de destino em fastboot, além de cabo/OTG compatíveis e bootloader que permita a gravação.
 
