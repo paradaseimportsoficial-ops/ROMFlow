@@ -20,9 +20,16 @@ A consulta manual e as funções por USB **não exigem root**. O app não instal
 
 <img src="docs/icone-512.png" width="96" alt="Ícone do ROMFlow">
 
-> **Versão atual: 0.1.17.** Projeto independente, não oficial e sem vínculo com Motorola ou Lenovo. O catálogo e a compatibilidade dependem do modelo, variante e pacote escolhido.
+> **Versão atual: 0.1.19.** Projeto independente, não oficial e sem vínculo com Motorola ou Lenovo. O catálogo e a compatibilidade dependem do modelo, variante e pacote escolhido.
 
-## Novidades da versão 0.1.17
+## Novidades da versão 0.1.19
+
+- Corrigido o espaçamento desigual entre as abas superiores na tela inicial; as três telas agora usam o mesmo intervalo.
+- Mantido o alinhamento dos nomes em duas linhas. O autor confirmou a correção do espaçamento no próprio celular; outros modelos não foram conferidos por esse teste.
+- Desde a 0.1.18, o flash avulso do **Avançado BETA** permite escolher partição exata, A, B ou ambos. A partição exata é o padrão; as outras escolhas exigem confirmação das informações do destino. Partições lógicas exigem fastbootd e estado de snapshot liberado.
+- A seleção não muda o slot ativo nem duplica instaladores importados. Ambos sobrescreve as duas cópias; use somente quando o guia da ROM exigir. A gravação A/B continua sem validação física.
+
+## Recursos mantidos
 
 ### Modelo automático sem root
 
