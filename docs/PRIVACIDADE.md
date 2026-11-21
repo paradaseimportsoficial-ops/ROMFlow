@@ -16,7 +16,7 @@ Ao abrir o aplicativo, o ROMFlow tenta ler o código do modelo XT do próprio ce
 
 ## Leitura opcional com root — edição do GitHub
 
-Em Sobre, Consultar este celular com root permite tentar ler modelo e IMEI do próprio aparelho. É opcional: não solicita root na inicialização e só tenta a leitura ao tocar em Ler dados com root. A autorização e a revogação são feitas pelo gerenciador de root. Os comandos são fixos e somente de leitura; não há terminal persistente, logs com identificadores ou histórico desses dados. O IMEI aparece mascarado na conferência. Ao confirmar Consultar, os dados são enviados à Motorola/Lenovo. Pode ser necessário completar manualmente mesmo com root. A função não instala a ROM no próprio celular. A edição para loja não contém essa função.
+Na tela de consulta, Ler este celular com root permite tentar ler modelo e IMEI do próprio aparelho. É opcional: não solicita root na inicialização e só tenta a leitura ao tocar em Ler dados com root. A autorização e a revogação são feitas pelo gerenciador de root. Os comandos são fixos e somente de leitura; não há terminal persistente, logs com identificadores ou histórico desses dados. O IMEI aparece mascarado na conferência. Ao confirmar Consultar, os dados são enviados à Motorola/Lenovo. Pode ser necessário completar manualmente mesmo com root. A função não instala a ROM no próprio celular. A edição para loja não contém essa função.
 
 ## Conta, login e sessão
 
