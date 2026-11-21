@@ -2,75 +2,75 @@
 
 <img src="docs/icone-512.png" width="96" alt="Ícone do ROMFlow">
 
-**Aplicativo Android para consultar e baixar ROMs originais Motorola e realizar instalações e operações compatíveis em outro aparelho por USB/OTG, sem computador.**
+**Aplicativo Android para consultar e baixar firmware original Motorola e realizar instalações e operações compatíveis em outro aparelho por USB/OTG, sem computador.**
 
-Desenvolvido por **Técnico Root — Ivanildo Sousa**. Projeto independente, sem vínculo com Motorola ou Lenovo.
+Por **Técnico Root — Ivanildo Sousa**. Projeto independente, sem vínculo com Motorola ou Lenovo.
 
 ## Download
 
 **[📥 Baixar a versão mais recente](https://github.com/paradaseimportsoficial-ops/ROMFlow/releases/latest)**
 
-Na página da atualização, baixe **ROMFlow.apk**. Use a distribuição disponibilizada pelo autor. O arquivo **SHA256SUMS.txt** permite conferir o download.
+Baixe **ROMFlow.apk** na publicação mais recente. O arquivo **SHA256SUMS.txt** permite conferir o download. A atualização 0.1.20 traz uma **atualização de segurança**.
 
-## O que você pode fazer
+## Funções
 
-- **Baixar ROM:** consultar o catálogo Motorola/Lenovo com conta, modelo XT e IMEI e baixar o pacote direto no celular.
-- **Modelo automático:** o app tenta preencher o modelo do celular em que está instalado, sem root. Confira o resultado e informe o IMEI manualmente.
-- **Reconhecer por fastboot:** identificar outro Motorola conectado por USB/OTG, quando o aparelho disponibilizar os dados.
-- **Instalar ROM:** preparar e instalar firmware original compatível em outro Motorola por USB/OTG.
-- **Avançado · BETA:** flash de imagens avulsas, seleção de slot A/B ou ambos, boot temporário de imagem, ZIP por ADB sideload e importação de instaladores BAT/SH/XML compatíveis.
-- **Ajuda e suporte:** instruções no aplicativo e opção para relatar erros ou sugestões.
+- **Baixar ROM:** catálogo Motorola/Lenovo, consulta por modelo XT e IMEI e download no celular.
+- **Modelo automático sem root:** confira a sugestão do modelo e informe o IMEI manualmente.
+- **Reconhecimento USB:** identifica outro Motorola em fastboot por USB/OTG quando o aparelho fornece os dados.
+- **Instalar ROM:** prepara e instala firmware original compatível em outro Motorola.
+- **Avançado:** flash de imagens, seleção de slot A/B ou ambos, boot temporário, ZIP por ADB sideload e instaladores BAT/SH/XML compatíveis.
 
-A aba Avançado pode ser utilizada com custom ROMs e recoveries **quando o pacote, o aparelho e as operações forem compatíveis**. Não há suporte universal a qualquer ROM, script ou celular.
+As operações avançadas também podem ser usadas com custom ROMs e recoveries compatíveis. Siga o guia específico do aparelho e do pacote; não há suporte universal a qualquer celular ou script.
 
-## Requisitos e uso
+## Como usar
 
-- Android 10 ou superior, internet e espaço livre.
-- Conta Motorola/Lenovo para consultar e baixar firmware original.
-- Para operações USB: celular controlador com USB Host/OTG, cabo compatível e outro aparelho no modo indicado pelo guia da ROM.
+É necessário Android 10 ou superior, internet e espaço livre. Para consultar o catálogo, entre na conta Motorola/Lenovo, confira o modelo e informe o IMEI. A ajuda do aplicativo mostra onde encontrar esses dados nas configurações ou com `*#06#` no app Telefone.
 
-A consulta manual e as funções USB **não exigem root**. A edição do GitHub oferece uma alternativa opcional em **Sobre → Consultar este celular com root**; a leitura do IMEI pode falhar mesmo com autorização.
+Para operações USB, use um celular controlador com USB Host/OTG, cabo compatível e outro aparelho no modo indicado pelo guia da ROM. **O ROMFlow não instala a ROM no próprio celular em que está aberto.**
 
-Para começar, entre na conta, confira o modelo e informe o IMEI. A ajuda mostra onde encontrar esses dados nas configurações ou pelo código `*#06#` no app Telefone. Para outro aparelho, edite os dados ou use o reconhecimento USB.
+A consulta manual e as funções USB não exigem root. A edição do GitHub oferece **Ler este celular com root** na tela de consulta, como alternativa opcional. O IMEI pode continuar indisponível mesmo com autorização; complete manualmente nesse caso.
 
-**O ROMFlow controla outro aparelho durante a instalação USB. Não instala a ROM no celular que executa o app.**
+## Antes de gravar
 
-## Antes de instalar
+Faça backup e confirme modelo, variante e ROM. Arquivos ou partições incorretos podem apagar dados ou impedir a inicialização. Tentar manter dados não garante sua preservação. O aplicativo não desbloqueia nem bloqueia o bootloader.
 
-Faça backup e siga o guia específico do modelo, variante e ROM. Arquivos ou partições incorretos podem apagar dados ou impedir a inicialização. O aplicativo não desbloqueia nem bloqueia o bootloader, e tentar manter dados não garante sua preservação.
+Gravar ambos os slots sobrescreve as duas cópias; não muda o slot ativo nem duplica uma ROM inteira automaticamente. Use o modo adequado do aparelho para cada partição. Revise todas as etapas e apagamentos do instalador e conclua a formatação manual no recovery quando o fluxo exigir. ZIP de recovery não deve ser tratado como imagem de partição.
 
-**Avançado permanece BETA:** suas novas operações de gravação ainda precisam de validação em aparelhos reais. A seleção de ambos os slots sobrescreve as duas cópias; não muda o slot ativo nem duplica uma ROM inteira automaticamente. Partições lógicas exigem o modo adequado e condições compatíveis do aparelho.
+O autor relata testes em seus aparelhos, incluindo instalação stock no Moto G84. Isso não garante compatibilidade com todos os modelos, pacotes ou operações.
 
-Instaladores importados têm suporte limitado. Revise todas as etapas e apagamentos apresentados. Quando o fluxo indicar formatação manual pelo recovery, conclua essa etapa antes de iniciar o Android. ZIP de recovery não deve ser usado como imagem de partição.
+## Interface
 
-**Teste stock confirmado pelo autor:** instalação no Moto G84 com dados mantidos e inicialização concluída. Esse teste não valida outros modelos, outras ROMs ou as novas operações da aba Avançado.
+Captura da versão 0.1.16; detalhes podem diferir da versão atual.
 
-## Atualizações
+<img src="docs/capturas/inicio-016.png" width="300" alt="Tela inicial do ROMFlow">
 
-A edição do GitHub avisa quando há uma versão nova e pode exigir a atualização para continuar. Siga as instruções no app e confirme a instalação no Android.
+## Histórico das atualizações
 
-## Capturas de tela
-
-Capturas da versão 0.1.16; alguns detalhes podem diferir da versão atual.
-
-| Baixar ROM | Instalar ROM |
+| Versão | Resumo |
 | --- | --- |
-| ![Tela inicial](docs/capturas/inicio-016.png) | ![Instalação por USB](docs/capturas/instalar-016.png) |
+| 0.1.20 | Atualização de segurança. |
+| 0.1.19 | Manutenção da interface. |
+| 0.1.18 | Seleção de slots A/B no flash avulso e ajustes de navegação. |
+| 0.1.17 | Sugestão automática do modelo sem root. |
+| 0.1.16 | Operações USB avançadas e importação de instaladores compatíveis. |
+| 0.1.15 | Identificação de outro Motorola por fastboot USB/OTG. |
+| 0.1.14 | Preparação e instalação de ROM original por USB/OTG. |
+| 0.1.13 | Atualização da apresentação do apoio por Pix. |
+| 0.1.12 | Atualização da marca Técnico Root. |
+| 0.1.11 | Publicidade e diagnóstico. |
+| 0.1.10 | Padronização do nome ROMFlow e da pasta de downloads. |
+| 0.1.9 | Consulta e download de firmware Motorola. |
 
-| Avançado · BETA | Operações |
-| --- | --- |
-| ![Área avançada](docs/capturas/avancado-016.png) | ![Operações compatíveis](docs/capturas/operacoes-016.png) |
+As páginas das releases preservam as notas das versões. Prefira sempre o APK mais recente. Os links automáticos **Source code** do GitHub são cópias dos materiais deste repositório público: **não contêm o projeto Android do aplicativo**.
 
-As imagens ilustram a interface e não comprovam testes físicos das operações.
+## Privacidade e suporte
 
-## Privacidade, apoio e contato
+O app contém anúncios e oferece apoio voluntário por Pix. Leia a [política de privacidade](docs/PRIVACIDADE.md).
 
-O aplicativo contém anúncios e oferece apoio voluntário por Pix. Consulte a [política de privacidade](docs/PRIVACIDADE.md).
-
-Suporte: [paradaseimportsoficial@gmail.com](mailto:paradaseimportsoficial@gmail.com). Ao relatar erros, informe a versão do app, o Android e o que aconteceu. Não publique IMEI, números de série, credenciais ou links de sessão.
+Contato: [paradaseimportsoficial@gmail.com](mailto:paradaseimportsoficial@gmail.com). Ao relatar problemas, informe a versão do app, o Android e o que aconteceu. Não publique IMEI, credenciais ou links de sessão.
 
 ## Créditos
 
-Base técnica adaptada de [Moto Firmware Downloader, de JoshRob](https://github.com/JoshRob297/moto-firmware-downloader), sob [licença MIT](LICENSE-MFD.txt). As marcas pertencem aos respectivos titulares.
+Base técnica adaptada de [Moto Firmware Downloader, de JoshRob](https://github.com/JoshRob297/moto-firmware-downloader), sob [licença MIT](LICENSE-MFD.txt). Marcas pertencem aos respectivos titulares.
 
-Este repositório público reúne a distribuição e a documentação de uso do ROMFlow.
+Este repositório público reúne a distribuição e a documentação de uso.
