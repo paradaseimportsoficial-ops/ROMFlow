@@ -1,198 +1,76 @@
-# ROMFlow — ROMs Motorola e ferramentas USB avançadas
-
-**Aplicativo Android para baixar e instalar ROM stock Motorola e executar operações avançadas por USB/OTG, sem computador.**
-
-O **ROMFlow**, por **Técnico Root**, busca pacotes de **ROM stock (firmware original) Motorola** no serviço Motorola/Lenovo. Também permite preparar os arquivos e fazer a **instalação (flash) em outro Motorola**, conectado ao celular com o aplicativo por cabo **USB/OTG**.
-
-Além do fluxo de ROM stock Motorola, a aba **Avançado · BETA** permite instalar **custom ROMs com instaladores BAT/SH/XML compatíveis**, fazer **flash de imagens avulsas**, iniciar uma imagem por **boot temporário** (por exemplo, um recovery como TWRP, quando suportado pelo aparelho) e enviar **ZIP pelo ADB sideload do recovery**. Essas operações são realizadas em outro aparelho por USB/OTG e dependem do protocolo, do arquivo e do guia específico da ROM. Não há suporte universal a qualquer celular, custom ROM ou script.
-
-**[📥 Baixar o APK mais recente](https://github.com/paradaseimportsoficial-ops/ROMFlow/releases/latest)** · [Como usar](#como-usar) · [Capturas de tela](#capturas-de-tela)
-
-| Quero… | Onde faço |
-| --- | --- |
-| Baixar a ROM original de um Motorola | **Baixar ROM**: entre na conta Motorola/Lenovo e consulte pelo modelo XT e IMEI, ou identifique outro aparelho em fastboot por USB/OTG. |
-| Instalar a ROM stock em outro Motorola | **Instalar ROM**: extraia o pacote, confira o plano e faça o flash por USB/OTG. |
-| Instalar custom ROM com script compatível, usar imagens avulsas, boot temporário ou sideload | **Avançado · BETA**: operações para outro aparelho; confira os limites descritos abaixo. |
-
-**Para baixar**, basta um celular com Android 10 ou superior, conta Motorola/Lenovo, internet e espaço livre. **Para instalar**, são necessários dois aparelhos: o celular que executa o ROMFlow e o Motorola de destino em fastboot, além de cabo/OTG compatíveis e bootloader que permita a gravação.
-
-A consulta manual e as funções por USB **não exigem root**. O app não instala a ROM no próprio celular em que está aberto. A aba **Avançado permanece BETA**; não há suporte irrestrito a qualquer aparelho ou custom ROM.
+# ROMFlow — ROMs Motorola e ferramentas USB
 
 <img src="docs/icone-512.png" width="96" alt="Ícone do ROMFlow">
 
-> **Versão atual: 0.1.19.** Projeto independente, não oficial e sem vínculo com Motorola ou Lenovo. O catálogo e a compatibilidade dependem do modelo, variante e pacote escolhido.
+**Aplicativo Android para consultar e baixar ROMs originais Motorola e realizar instalações e operações compatíveis em outro aparelho por USB/OTG, sem computador.**
 
-## Novidades da versão 0.1.19
-
-- Corrigido o espaçamento desigual entre as abas superiores na tela inicial; as três telas agora usam o mesmo intervalo.
-- Mantido o alinhamento dos nomes em duas linhas. O autor confirmou a correção do espaçamento no próprio celular; outros modelos não foram conferidos por esse teste.
-- Desde a 0.1.18, o flash avulso do **Avançado BETA** permite escolher partição exata, A, B ou ambos. A partição exata é o padrão; as outras escolhas exigem confirmação das informações do destino. Partições lógicas exigem fastbootd e estado de snapshot liberado.
-- A seleção não muda o slot ativo nem duplica instaladores importados. Ambos sobrescreve as duas cópias; use somente quando o guia da ROM exigir. A gravação A/B continua sem validação física.
-
-## Recursos mantidos
-
-### Modelo automático sem root
-
-Ao abrir a consulta de ROM, o aplicativo tenta preencher o **código XT do próprio celular**, sem pedir root. Confira o modelo e informe o **IMEI manualmente**. O código depende do que o Android disponibilizar; se não houver um XT válido, complete o campo. Para consultar outro aparelho, edite o modelo ou use o reconhecimento por fastboot USB/OTG.
-
-O preenchimento automático foi testado e confirmado pelo autor. A opção de tentar ler modelo e IMEI com root continua em **Sobre**, na edição do GitHub; o IMEI com root ainda pode não estar disponível.
-
-A aba **Avançado permanece BETA**: suas funções de gravação novas ainda não foram validadas fisicamente. A consulta/download e o fluxo stock mantêm os testes já descritos abaixo. O acesso root é opcional e a leitura do IMEI depende da ROM.
-
-### Root é uma alternativa, não uma obrigação
-
-Na edição do GitHub 0.1.17, entre em **Sobre → Consultar este celular com root** se quiser tentar identificar o **próprio celular que executa o ROMFlow** para consultar e baixar sua ROM.
-
-1. Toque em **Ler dados com root** somente se quiser usar essa alternativa.
-2. Autorize o ROMFlow no seu gerenciador de root; em alguns gerenciadores é necessário liberar o app manualmente.
-3. Confira o modelo e o IMEI mascarado. Toque em **Consultar ROM deste celular**, ou complete manualmente se faltarem dados.
-4. Consulte o catálogo e baixe a ROM normalmente, usando a conta Motorola/Lenovo e internet.
-
-**O ROMFlow não pede root ao abrir.** A consulta manual e a leitura de outro aparelho por fastboot continuam disponíveis **sem root**. Autorizar root não instala nem atualiza o Android do celular que executa o aplicativo. A leitura tenta obter os dados automaticamente e informa quando o sistema recusa ou não retorna o IMEI. Ela pode não obter o IMEI mesmo com root; nenhum identificador é registrado em logs ou histórico pelo código do app. A autorização pode ser revogada no gerenciador de root.
-
-A edição destinada à **V-Appstore da Vivo não inclui essa função no APK**. Isso não representa garantia de aprovação: a loja analisa o aplicativo completo.
-
-### USB avançado e importação de instaladores (beta)
-
-Em **Avançado · BETA**, selecione uma imagem para `fastboot flash` ou boot temporário, use um comando fastboot suportado ou envie um ZIP pelo **ADB sideload do recovery**. Essas operações controlam outro aparelho por USB/OTG e não exigem root no celular com ROMFlow. Um ZIP de recovery não deve ser gravado como imagem.
-
-Para automatizar uma sequência, abra **Importar instalador BAT / SH / XML**, selecione a pasta extraída da ROM e escolha o instalador. O app lê as referências, confere e copia todos os arquivos necessários, mostra o plano e pede confirmação antes de gravar. É necessário espaço livre para a cópia temporária das imagens.
-
-- **BAT/SH literal:** comandos fastboot suportados, com nomes relativos dos arquivos. Variáveis, laços, condicionais e comandos externos exigem adaptação; o app recusa o instalador inteiro antes de gravar. Mudanças de modo no meio de uma sequência genérica não estão disponíveis nesta beta.
-- **XML Motorola:** verifica os checksums e mantém as operações declaradas, inclusive apagamentos apresentados na revisão. O fluxo guiado de stock continua em **Instalar ROM**.
-- **Instalador interativo reconhecido:** disponível apenas para pacotes compatíveis. Confira o plano exibido antes de confirmar. Não há suporte irrestrito a qualquer BAT ou custom ROM; outras versões podem exigir adaptação.
-
-**No fluxo interativo reconhecido:** confirme a base stock exata e as instruções do pacote. O perfil reaproveita o kernel existente e remove o sistema do slot inativo. O app exige bootloader já desbloqueado e serial disponível para reconfirmar o mesmo destino após a mudança de modo; pode ser necessário autorizar USB novamente. Ele não desbloqueia o aparelho. A opção manter dados só deve ser usada quando o guia permitir, estando na mesma ROM.
-
-**Instalação limpa do fluxo interativo nesta beta exige formatação manual pelo recovery após a gravação, antes de iniciar o Android.** O app não implementa `fastboot -w`, não apaga userdata/metadata nessa escolha e não reinicia automaticamente para o Android enquanto a formatação está pendente. O término da gravação não confirma que essa etapa foi feita.
-
-O botão **Relatar erro ou sugestão** abre um rascunho no aplicativo de e-mail para você revisar e enviar ao suporte. Inclui apenas versão do app/Android, área e campos para descrever o caso; não envia nada automaticamente nem inclui IMEI, número de série ou sessão. O contato também fica em Sobre.
-
-**Limites de teste:** funções avançadas e leitura de IMEI com root ainda precisam de validação em aparelhos reais. Imagens maiores que o limite de transferência do destino são recusadas; não há fracionamento automático. Sideload aceita recovery compatível e não oferece ADB autenticado do Android normal. Não há paridade completa com Bugjaeger nem execução livre de Windows/Bash.
-
-## O que o aplicativo faz
-
-- Abre o login Motorola/Lenovo no navegador externo, inclusive para quem usa conta Google.
-- Sugere automaticamente o modelo XT do próprio celular, sem root, quando o Android o disponibiliza.
-- Consulta o catálogo com o modelo conferido e IMEI informado, ou com os dados lidos de outro Motorola em fastboot por USB/OTG.
-- Apresenta os pacotes retornados e permite escolher qual baixar.
-- Mostra o andamento e salva o ZIP em **Downloads/ROMFlow**.
-- Inclui ajuda ilustrada para localizar modelo e IMEI.
-- Continua o download pelo gerenciador do Android quando você sai da tela.
-
-- Extrai o ZIP dentro do aplicativo em uma pasta nova.
-- Lê o flashfile.xml, verifica os checksums dos arquivos e permite salvar **flash-romflow.sh**.
-- Reconhece outro Motorola em fastboot e instala diretamente por USB/OTG.
-- Permite escolher instalação limpa ou tentar manter dados e reiniciar automaticamente após sucesso.
-- Mostra um guia ilustrado e o progresso da gravação.
-
-O serviço pode não disponibilizar todos os modelos, versões ou canais. Produto e checksums não comprovam compatibilidade de variante ou downgrade. O aplicativo não desbloqueia nem bloqueia o bootloader.
-
-**Teste confirmado pelo autor:** Moto G84 (bangkk), 23 arquivos, 27 etapas no modo tentar manter dados; Android iniciou, arquivos, senha e Wi-Fi foram preservados e o root foi removido. O reinício automático também foi testado. Outros modelos, outras ROMs e instalação limpa não foram validados por esse teste. Não há garantia geral de preservação dos dados; faça backup.
+Desenvolvido por **Técnico Root — Ivanildo Sousa**. Projeto independente, sem vínculo com Motorola ou Lenovo.
 
 ## Download
 
-**[Baixar a versão mais recente](https://github.com/paradaseimportsoficial-ops/ROMFlow/releases/latest)**
+**[📥 Baixar a versão mais recente](https://github.com/paradaseimportsoficial-ops/ROMFlow/releases/latest)**
 
-Na seção Releases, baixe **ROMFlow.apk**. O arquivo **SHA256SUMS.txt** permite conferir a integridade do download.
+Na página da atualização, baixe **ROMFlow.apk**. Use a distribuição disponibilizada pelo autor. O arquivo **SHA256SUMS.txt** permite conferir o download.
 
-O GitHub é o canal de distribuição direta. A edição da VIVO está prevista e depende de cadastro, envio e aprovação; ainda não está publicada na loja.
+## O que você pode fazer
 
-## Como usar
+- **Baixar ROM:** consultar o catálogo Motorola/Lenovo com conta, modelo XT e IMEI e baixar o pacote direto no celular.
+- **Modelo automático:** o app tenta preencher o modelo do celular em que está instalado, sem root. Confira o resultado e informe o IMEI manualmente.
+- **Reconhecer por fastboot:** identificar outro Motorola conectado por USB/OTG, quando o aparelho disponibilizar os dados.
+- **Instalar ROM:** preparar e instalar firmware original compatível em outro Motorola por USB/OTG.
+- **Avançado · BETA:** flash de imagens avulsas, seleção de slot A/B ou ambos, boot temporário de imagem, ZIP por ADB sideload e importação de instaladores BAT/SH/XML compatíveis.
+- **Ajuda e suporte:** instruções no aplicativo e opção para relatar erros ou sugestões.
 
-1. Abra o aplicativo e escolha conectar a conta.
-2. Conclua o login na página Motorola/Lenovo pelo navegador. Se a página apresentar o botão de abrir o cliente Software Fix, toque nele para retornar ao aplicativo.
-3. Confira se a conta foi reconhecida.
-4. Confira o modelo preenchido automaticamente, se disponível, e informe o IMEI. Para outro aparelho, edite o modelo ou use fastboot. Use a ajuda ilustrada para encontrar o código XT nas configurações e o IMEI pelas configurações ou digitando `*#06#` no teclado do app Telefone. Digite o código completo do modelo (por exemplo, o código XT que aparece nas informações do aparelho) e o IMEI. O botão de ajuda mostra onde encontrá-los.
-5. Consulte os pacotes, confira as informações e escolha o download.
-6. Acompanhe em Meus downloads. O ZIP ficará disponível em Downloads/ROMFlow.
+A aba Avançado pode ser utilizada com custom ROMs e recoveries **quando o pacote, o aparelho e as operações forem compatíveis**. Não há suporte universal a qualquer ROM, script ou celular.
 
-### Buscar ROM pelo fastboot, sem digitar modelo e IMEI
+## Requisitos e uso
 
-1. Entre na conta Motorola/Lenovo e abra **Buscar ROM**.
-2. Toque em **Reconhecer por fastboot · USB/OTG**.
-3. Coloque o outro Motorola em fastboot e conecte-o por cabo de dados/OTG ao celular com ROMFlow.
-4. Toque em **Reconhecer aparelho** e autorize o acesso USB no Android.
-5. Confira o modelo e o final do IMEI na tela; toque em **Consultar ROMs deste aparelho** para buscar os pacotes.
+- Android 10 ou superior, internet e espaço livre.
+- Conta Motorola/Lenovo para consultar e baixar firmware original.
+- Para operações USB: celular controlador com USB Host/OTG, cabo compatível e outro aparelho no modo indicado pelo guia da ROM.
 
-A leitura não grava, apaga ou reinicia. Se o bootloader não fornecer todos os dados válidos, complete os campos manualmente. A conta e a conexão à internet continuam necessárias para consultar o catálogo. Modelo e IMEI só são enviados ao serviço Motorola/Lenovo ao consultar; o código do app não os envia ao criador nem aos anúncios e não os salva em histórico.
+A consulta manual e as funções USB **não exigem root**. A edição do GitHub oferece uma alternativa opcional em **Sobre → Consultar este celular com root**; a leitura do IMEI pode falhar mesmo com autorização.
 
-**Teste confirmado na beta 0.1.15:** Moto G84 (XT2347-1) reconhecido por USB em fastboot, modelo e IMEI lidos, catálogo retornou a ROM BANGKK_G nos canais retbr/retla, sem digitar os identificadores. A consulta manual permanece disponível.
+Para começar, entre na conta, confira o modelo e informe o IMEI. A ajuda mostra onde encontrar esses dados nas configurações ou pelo código `*#06#` no app Telefone. Para outro aparelho, edite os dados ou use o reconhecimento USB.
 
-Use somente identificadores de aparelhos próprios ou que você tenha autorização para consultar. Se o login não concluir, não publique URLs de retorno: elas podem conter um código de sessão.
+**O ROMFlow controla outro aparelho durante a instalação USB. Não instala a ROM no celular que executa o app.**
 
-## Instalar em outro Motorola
+## Antes de instalar
 
-1. Faça backup e confirme modelo, variante e versão compatíveis da ROM. Não use este fluxo para custom ROM.
-2. Abra **Instalar ROM**, selecione o ZIP e extraia, ou selecione a pasta já extraída.
-3. Desligue o aparelho de destino e entre em fastboot com Volume para baixo + Ligar. Conecte-o por cabo USB/OTG ao celular que executa o ROMFlow.
-4. Toque em **Identificar aparelho em fastboot** e autorize o acesso USB no Android.
-5. Confira o XML e os arquivos, revise as etapas e, opcionalmente, salve o script. Salvar o script não é necessário para instalar pelo app.
-6. Escolha instalação limpa ou tentar manter dados. Marque o reinício automático se desejar e confirme por escrito **INSTALAR**.
-7. Acompanhe a conclusão sem desconectar o cabo. Se houver erro, a sequência para sem repetição automática. Confira a inicialização do Android após a conclusão.
+Faça backup e siga o guia específico do modelo, variante e ROM. Arquivos ou partições incorretos podem apagar dados ou impedir a inicialização. O aplicativo não desbloqueia nem bloqueia o bootloader, e tentar manter dados não garante sua preservação.
 
-A instalação limpa apaga dados previstos no XML. Tentar manter dados omite operações de userdata, metadata e carrier, mas não garante preservação. Apagamentos de modemst1/modemst2 exigem autorização separada. Imagens acima do limite de transferência do aparelho são recusadas antes da gravação; não há fracionamento automático.
+**Avançado permanece BETA:** suas novas operações de gravação ainda precisam de validação em aparelhos reais. A seleção de ambos os slots sobrescreve as duas cópias; não muda o slot ativo nem duplica uma ROM inteira automaticamente. Partições lógicas exigem o modo adequado e condições compatíveis do aparelho.
 
-## Requisitos
+Instaladores importados têm suporte limitado. Revise todas as etapas e apagamentos apresentados. Quando o fluxo indicar formatação manual pelo recovery, conclua essa etapa antes de iniciar o Android. ZIP de recovery não deve ser usado como imagem de partição.
 
-- Android 10 ou superior.
-- Conta compatível com o serviço Motorola/Lenovo.
-- Internet e espaço para o ZIP e os arquivos extraídos, que podem ocupar vários gigabytes.
-- Para instalar: USB Host/OTG no celular controlador, outro Motorola em fastboot e bootloader que permita gravar o firmware escolhido.
-
-Não exige root. O modelo e IMEI podem ser digitados ou lidos de outro Motorola em fastboot, mediante autorização USB. A interface é em português.
-
-## Anúncios e apoio
-
-O aplicativo contém anúncios AdMob e oferece apoio voluntário por Pix. A disponibilidade dos anúncios depende da plataforma. Nenhum anúncio é exibido durante a gravação USB.
-
-O Pix é opcional. O aplicativo não acessa a conta bancária do usuário nem executa ou confirma pagamentos.
+**Teste stock confirmado pelo autor:** instalação no Moto G84 com dados mantidos e inicialização concluída. Esse teste não valida outros modelos, outras ROMs ou as novas operações da aba Avançado.
 
 ## Atualizações
 
-A edição do GitHub avisa quando há uma nova versão disponível e pode exigir a atualização para continuar. Siga as instruções exibidas no aplicativo; o Android solicita confirmação para instalar.
-
-Baixe as atualizações somente pela seção [Releases deste repositório](https://github.com/paradaseimportsoficial-ops/ROMFlow/releases/latest). As edições de produção compatíveis podem ser atualizadas sem desinstalar. Se estiver migrando de uma edição antiga de teste, consulte as orientações do aplicativo.
-
-A edição de loja, quando disponível, recebe atualizações pelo respectivo canal.
-
-## Privacidade
-
-A sessão técnica é armazenada de forma criptografada no aparelho. O modelo e o IMEI digitados ou lidos por USB são enviados ao serviço Motorola/Lenovo para a consulta; não são gravados deliberadamente pelo app em histórico ou relatórios do criador. O SDK de anúncios trata seus próprios dados de publicidade/diagnóstico.
-
-Leia a [política de privacidade](docs/PRIVACIDADE.md), também disponível offline no aplicativo. E-mail de suporte: [paradaseimportsoficial@gmail.com](mailto:paradaseimportsoficial@gmail.com).
+A edição do GitHub avisa quando há uma versão nova e pode exigir a atualização para continuar. Siga as instruções no app e confirme a instalação no Android.
 
 ## Capturas de tela
 
-Capturas reais da versão **0.1.16**, enviadas pelo autor, que ilustram a interface mantida na 0.1.17. A navegação reúne **Baixar ROM**, **Instalar ROM** e **Avançado**; a área avançada permanece **BETA**.
+Capturas da versão 0.1.16; alguns detalhes podem diferir da versão atual.
 
 | Baixar ROM | Instalar ROM |
 | --- | --- |
-| ![Tela inicial do ROMFlow 0.1.16 com as três abas](docs/capturas/inicio-016.png) | ![Instalação stock por USB e preparação da pasta](docs/capturas/instalar-016.png) |
+| ![Tela inicial](docs/capturas/inicio-016.png) | ![Instalação por USB](docs/capturas/instalar-016.png) |
 
-| Avançado · BETA | Operações disponíveis |
+| Avançado · BETA | Operações |
 | --- | --- |
-| ![USB avançado com importação de BAT, SH e XML](docs/capturas/avancado-016.png) | ![Flash, boot temporário, ADB sideload e comando fastboot manual](docs/capturas/operacoes-016.png) |
+| ![Área avançada](docs/capturas/avancado-016.png) | ![Operações compatíveis](docs/capturas/operacoes-016.png) |
 
-| Sobre o aplicativo | Consulta com root opcional |
-| --- | --- |
-| ![Sobre, ajuda e opção de consultar este celular com root](docs/capturas/sobre-016.png) | ![Leitura opcional de dados do próprio celular com root](docs/capturas/root-opcional-016.png) |
+As imagens ilustram a interface e não comprovam testes físicos das operações.
 
-As imagens mostram a interface. **Não comprovam validação física das novas operações da aba Avançado nem leitura bem-sucedida de IMEI com root.** O teste stock confirmado no Moto G84 está descrito acima.
+## Privacidade, apoio e contato
 
-## Autoria e créditos
+O aplicativo contém anúncios e oferece apoio voluntário por Pix. Consulte a [política de privacidade](docs/PRIVACIDADE.md).
 
-Desenvolvido por **Técnico Root — Ivanildo Sousa**. Projeto independente, não oficial, sem vínculo declarado com Motorola ou Lenovo. As marcas pertencem aos respectivos titulares.
+Suporte: [paradaseimportsoficial@gmail.com](mailto:paradaseimportsoficial@gmail.com). Ao relatar erros, informe a versão do app, o Android e o que aconteceu. Não publique IMEI, números de série, credenciais ou links de sessão.
 
-A base técnica foi adaptada de [Moto Firmware Downloader, de JoshRob](https://github.com/JoshRob297/moto-firmware-downloader), revisão b5ea93a (v1.3.4), sob [licença MIT](LICENSE-MFD.txt). Essa licença cobre o código do projeto de origem e não equivale a autorização para o serviço ou os arquivos Motorola/Lenovo.
+## Créditos
 
-## Suporte
+Base técnica adaptada de [Moto Firmware Downloader, de JoshRob](https://github.com/JoshRob297/moto-firmware-downloader), sob [licença MIT](LICENSE-MFD.txt). As marcas pertencem aos respectivos titulares.
 
-Contato: [paradaseimportsoficial@gmail.com](mailto:paradaseimportsoficial@gmail.com). Ao relatar um problema, informe a versão do app, versão do Android e o texto do erro. Remova IMEI, tokens, links de sessão e dados pessoais das imagens.
-
-A documentação será atualizada conforme o estado real de publicação e aprovação.
-
-## Distribuição
-
-Use os APKs disponibilizados pelo autor na seção Releases. Este repositório público disponibiliza os aplicativos e a documentação de uso.
-
+Este repositório público reúne a distribuição e a documentação de uso do ROMFlow.
