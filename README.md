@@ -60,7 +60,7 @@ Para automatizar uma sequência, abra **Importar instalador BAT / SH / XML**, se
 
 - **BAT/SH literal:** comandos fastboot suportados, com nomes relativos dos arquivos. Variáveis, laços, condicionais e comandos externos exigem adaptação; o app recusa o instalador inteiro antes de gravar. Mudanças de modo no meio de uma sequência genérica não estão disponíveis nesta beta.
 - **XML Motorola:** verifica os checksums e mantém as operações declaradas, inclusive apagamentos apresentados na revisão. O fluxo guiado de stock continua em **Instalar ROM**.
-- **Instalador interativo reconhecido:** adapta o fluxo do BAT de exemplo com seis imagens, bootloader → fastbootd, slot ativo, remoção de partições lógicas do slot inativo e preparação das partições do slot ativo. Não é suporte irrestrito a qualquer BAT ou custom ROM. O programa precisa corresponder ao perfil aceito; outras versões podem exigir adaptação.
+- **Instalador interativo reconhecido:** disponível apenas para pacotes compatíveis. Confira o plano exibido antes de confirmar. Não há suporte irrestrito a qualquer BAT ou custom ROM; outras versões podem exigir adaptação.
 
 **No fluxo interativo reconhecido:** confirme a base stock exata e as instruções do pacote. O perfil reaproveita o kernel existente e remove o sistema do slot inativo. O app exige bootloader já desbloqueado e serial disponível para reconfirmar o mesmo destino após a mudança de modo; pode ser necessário autorizar USB novamente. Ele não desbloqueia o aparelho. A opção manter dados só deve ser usada quando o guia permitir, estando na mesma ROM.
 
@@ -144,23 +144,17 @@ Não exige root. O modelo e IMEI podem ser digitados ou lidos de outro Motorola 
 
 ## Anúncios e apoio
 
-O projeto pretende se sustentar com publicidade AdMob e contribuições voluntárias por Pix. As edições assinadas de distribuição usam o bloco real do criador. A disponibilidade de anúncios e a geração de receita dependem da plataforma e de sua revisão; a preparação de um APK não é uma aprovação.
+O aplicativo contém anúncios AdMob e oferece apoio voluntário por Pix. A disponibilidade dos anúncios depende da plataforma. Nenhum anúncio é exibido durante a gravação USB.
 
-A partir da versão 0.1.11, o aplicativo pode exibir um anúncio após a confirmação do download e antes de iniciar a transferência. Ao fechar o anúncio, o download começa automaticamente; se nenhum estiver pronto ou houver falha, ele começa normalmente. Também há uma oportunidade na conclusão acompanhada em primeiro plano, com intervalo mínimo de um minuto entre exibições para evitar anúncios seguidos em downloads rápidos. Um download que terminou fora da tela não abre anúncio atrasado. Em Sobre, Diagnóstico dos anúncios mostra o estado do carregamento e erros técnicos locais, sem IMEI, modelo ou sessão. Publicar no GitHub não garante aprovação nem veiculação no AdMob.
-
-Na instalação, há uma oportunidade de anúncio ao avançar da conferência para a revisão. Nenhum anúncio é exibido durante a gravação USB. O anúncio indisponível não bloqueia o fluxo.
-
-O Pix é opcional. O aplicativo não acessa a conta bancária do usuário nem executa ou confirma pagamentos. Na versão 0.1.13, o QR Code e o Copia e Cola incluem a descrição **Apoio ao ROMFlow** e o identificador **ROMFLOWAPOIO20261118**. No teste do autor, o identificador apareceu no comprovante da conta Nubank recebedora; a apresentação pode variar em outros bancos.
+O Pix é opcional. O aplicativo não acessa a conta bancária do usuário nem executa ou confirma pagamentos.
 
 ## Atualizações
 
-A edição do GitHub consulta novas versões em Releases ao abrir ou retornar ao aplicativo. Quando encontra uma versão mais recente, a atualização é obrigatória para continuar: é possível atualizar ou sair. A exigência já detectada permanece salva mesmo sem conexão. Se a consulta falhar antes de detectar uma atualização, o app permite usar a versão instalada. Ao iniciar a atualização, o APK é baixado e verificado por SHA-256, pacote, versão e assinatura. O Android pede confirmação para instalar. O canal consulta a Release pública mais recente deste repositório. Quem usa a versão 0.1.9 ou anterior precisa instalar a versão atual pelo link de download deste repositório para migrar ao novo endereço de atualização. Não é necessário desinstalar as edições com a assinatura definitiva.
+A edição do GitHub avisa quando há uma nova versão disponível e pode exigir a atualização para continuar. Siga as instruções exibidas no aplicativo; o Android solicita confirmação para instalar.
 
-A partir da versão 0.1.15, a tela de atualização destaca as novidades da versão disponível. Ao abrir uma versão recém-instalada, um resumo das novidades aparece uma vez e também funciona sem internet. A tela Sobre não precisa de botões manuais de atualização: a verificação continua automática, e a tela obrigatória permite retomar a instalação já baixada.
+Baixe as atualizações somente pela seção [Releases deste repositório](https://github.com/paradaseimportsoficial-ops/ROMFlow/releases/latest). As edições de produção compatíveis podem ser atualizadas sem desinstalar. Se estiver migrando de uma edição antiga de teste, consulte as orientações do aplicativo.
 
-A edição de loja recebe atualizações pela loja e não inclui a permissão para instalar APKs. As duas edições mantêm o mesmo nome de pacote e certificado definitivo. A troca entre canais também depende da versão e das políticas de assinatura da loja.
-
-As versões antigas de teste têm outro certificado. A primeira migração para a assinatura definitiva exige remover a edição de teste e entrar novamente na conta. As edições definitivas 0.1.7 e posteriores usam a mesma assinatura e podem receber versões compatíveis por cima, sem desinstalar.
+A edição de loja, quando disponível, recebe atualizações pelo respectivo canal.
 
 ## Privacidade
 
