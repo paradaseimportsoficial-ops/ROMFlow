@@ -1,6 +1,6 @@
 # Política de privacidade — ROMFlow
 
-Vigente para a versão 0.1.17 · 19 de novembro de 2026
+Revisada em 21 de novembro de 2026 · válida para os fluxos da versão 0.1.20 e da atualização 0.1.21 em teste
 
 ## Quem desenvolve o aplicativo
 
@@ -48,7 +48,7 @@ O UMP consulta o estado de consentimento e apresenta as mensagens configuradas p
 
 ## Atualizações do aplicativo
 
-Na edição para distribuição direta, a verificação de novas versões consulta o GitHub e o download de uma atualização usa o serviço indicado na publicação. O GitHub recebe dados normais da conexão. Quando uma versão mais recente é detectada, a atualização é obrigatória para continuar usando o aplicativo. A exigência é guardada no aparelho; é possível atualizar ou sair. O aplicativo confere a integridade e a assinatura do APK antes de pedir confirmação ao Android para instalar. Na edição para loja, esse atualizador está desativado e as atualizações são distribuídas pela loja. As políticas dos serviços e da loja também se aplicam.
+Na edição para distribuição direta, a verificação de novas versões consulta o GitHub e o download de uma atualização usa o serviço indicado na publicação. O GitHub recebe dados normais da conexão. Na atualização 0.1.21, a cópia do APK conferida para instalação pode permanecer no cache privado. Cópias com mais de sete dias são removidas quando ocorre uma nova verificação; também podem ser removidas pela limpeza dos dados/cache do app ou pelo Android. Quando uma versão mais recente é detectada, a atualização é obrigatória para continuar usando o aplicativo. A exigência é guardada no aparelho; é possível atualizar ou sair. O aplicativo confere a integridade e a assinatura do APK antes de pedir confirmação ao Android para instalar. Na edição para loja, esse atualizador está desativado e as atualizações são distribuídas pela loja. As políticas dos serviços e da loja também se aplicam.
 
 ## Apoio por Pix
 
@@ -60,8 +60,11 @@ Use Sair da conta neste app para apagar a sessão técnica local. Limpar os dado
 
 ## Contato, público e alterações
 
-Dúvidas sobre o aplicativo e solicitações relacionadas aos dados sob responsabilidade do criador podem ser encaminhadas ao contato informado acima. O aplicativo foi pensado para proprietários adultos de aparelhos e profissionais de assistência; não é direcionado a crianças. Alterações relevantes nesta política serão informadas na versão correspondente do aplicativo. Data desta redação: 19 de novembro de 2026. Contato de suporte e privacidade: paradaseimportsoficial@gmail.com.
+Dúvidas sobre o aplicativo e solicitações relacionadas aos dados sob responsabilidade do criador podem ser encaminhadas ao contato informado acima. O aplicativo foi pensado para proprietários adultos de aparelhos e profissionais de assistência; não é direcionado a crianças. Alterações relevantes nesta política serão informadas na versão correspondente do aplicativo. Data desta revisão: 21 de novembro de 2026. Contato de suporte e privacidade: paradaseimportsoficial@gmail.com.
 
 ## Políticas e documentos dos serviços
 
-[Privacidade do Google](https://policies.google.com/privacy)[Privacidade Lenovo](https://www.lenovo.com/br/pt/privacy/)[Privacidade GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)[Contato da marca pelo WhatsApp](https://wa.me/5599985042070)
+- [Privacidade do Google](https://policies.google.com/privacy)
+- [Privacidade Lenovo](https://www.lenovo.com/br/pt/privacy/)
+- [Privacidade GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
+

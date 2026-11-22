@@ -71,6 +71,13 @@ Contato: [paradaseimportsoficial@gmail.com](mailto:paradaseimportsoficial@gmail.
 
 ## Créditos
 
-Base técnica adaptada de [Moto Firmware Downloader, de JoshRob](https://github.com/JoshRob297/moto-firmware-downloader), sob [licença MIT](LICENSE-MFD.txt). Marcas pertencem aos respectivos titulares.
+Base técnica adaptada de [Moto Firmware Downloader, de JoshRob](https://github.com/JoshRob297/moto-firmware-downloader), sob [licença MIT](THIRD_PARTY_LICENSES.txt). Marcas pertencem aos respectivos titulares.
 
 Este repositório público reúne a distribuição e a documentação de uso.
+
+
+## Licença e autenticidade
+
+As contribuições originais do ROMFlow seguem os termos da [licença do aplicativo](LICENSE). Os componentes de terceiros mantêm suas próprias permissões e créditos em [THIRD_PARTY_LICENSES.txt](THIRD_PARTY_LICENSES.txt). A licença MIT da base de JoshRob não se aplica automaticamente a todas as contribuições originais do ROMFlow.
+
+Consulte [Segurança e autenticidade](SECURITY.md) para conferir o certificado oficial e relatar vulnerabilidades em particular.
