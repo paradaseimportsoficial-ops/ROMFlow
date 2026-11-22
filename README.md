@@ -4,7 +4,7 @@
 
 **Aplicativo Android para consultar e baixar firmware original Motorola e realizar instalações e operações compatíveis em outro aparelho por USB/OTG, sem computador.**
 
-Por **Técnico Root**. Projeto independente, sem vínculo com Motorola ou Lenovo.
+Por **Técnico Root — Ivanildo Sousa**. Projeto independente, sem vínculo com Motorola ou Lenovo.
 
 ## Download
 
