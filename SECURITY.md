@@ -11,7 +11,7 @@ os bytes daquela versão; não é o mesmo que a impressão digital do certificad
 Impressão digital SHA-256 do certificado oficial da distribuição direta:
 
 ```
-9D:30:21:8C:B2:60:B0:83:41:76:AF:31:81:8E:19:94:7F:A6:F3:BA:2F:2D:BF:96:F3:4C:A3:65:0D:07:D8:2C
+9D:30:21:8C:B2:60:B0:83:41:76:AF:31:81:8E:19:94:7F:A6:E3:BA:2F:2D:BF:96:E3:4C:A3:65:0D:07:D8:2C
 ```
 
 Essa impressão digital é pública e não contém a chave privada de assinatura.
