@@ -48,6 +48,7 @@ Captura da versão 0.1.16; detalhes podem diferir da versão atual.
 
 | Versão | Resumo |
 | --- | --- |
+| 0.1.21 | Atualização de segurança. |
 | 0.1.20 | Atualização de segurança. |
 | 0.1.19 | Manutenção da interface. |
 | 0.1.18 | Seleção de slots A/B no flash avulso e ajustes de navegação. |
