@@ -10,7 +10,7 @@ Por **Técnico Root — Ivanildo Sousa**. Projeto independente, sem vínculo com
 
 **[📥 Baixar a versão mais recente](https://github.com/paradaseimportsoficial-ops/ROMFlow/releases/latest)**
 
-Baixe **ROMFlow.apk** na publicação mais recente. O arquivo **SHA256SUMS.txt** permite conferir o download. A atualização 0.1.20 traz uma **atualização de segurança**.
+Baixe **ROMFlow.apk** na publicação mais recente. O arquivo **SHA256SUMS.txt** permite conferir o download. A atualização 0.1.21 traz uma **atualização de segurança**.
 
 ## Funções
 
