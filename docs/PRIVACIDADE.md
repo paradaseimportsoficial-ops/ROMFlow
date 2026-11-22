@@ -4,7 +4,7 @@ Revisada em 21 de novembro de 2026 · válida para os fluxos da versão 0.1.20 e
 
 ## Quem desenvolve o aplicativo
 
-ROMFlow é um projeto independente de Técnico Root, de Ivanildo Sousa. Não é um produto oficial nem possui vínculo declarado com Motorola, Lenovo, Samsung ou Google. Contato de suporte e privacidade: [paradaseimportsoficial@gmail.com](mailto:paradaseimportsoficial@gmail.com).
+ROMFlow é um projeto independente de Técnico Root. Não é um produto oficial nem possui vínculo declarado com Motorola, Lenovo, Samsung ou Google. Contato de suporte e privacidade: [paradaseimportsoficial@gmail.com](mailto:paradaseimportsoficial@gmail.com).
 
 ## Para que os dados são usados
 
