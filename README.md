@@ -10,10 +10,11 @@ Por **Técnico Root — Ivanildo Sousa**. Projeto independente, sem vínculo com
 
 **[📥 Baixar a versão mais recente](https://github.com/paradaseimportsoficial-ops/ROMFlow/releases/latest)**
 
-Baixe **ROMFlow.apk** na publicação mais recente. O arquivo **SHA256SUMS.txt** permite conferir o download. A atualização 0.1.21 traz uma **atualização de segurança**.
+Baixe **ROMFlow.apk** na publicação mais recente. O arquivo **SHA256SUMS.txt** permite conferir o download. A versão 0.1.22 adiciona **português, inglês, espanhol e árabe**, com seleção de idioma no aplicativo.
 
 ## Funções
 
+- **Idiomas:** português (Brasil), inglês, espanhol e árabe, com troca pelo botão 🌐 Idioma na tela principal.
 - **Baixar ROM:** catálogo Motorola/Lenovo, consulta por modelo XT e IMEI e download no celular.
 - **Modelo automático sem root:** confira a sugestão do modelo e informe o IMEI manualmente.
 - **Reconhecimento USB:** identifica outro Motorola em fastboot por USB/OTG quando o aparelho fornece os dados.
@@ -48,6 +49,7 @@ Captura da versão 0.1.16; detalhes podem diferir da versão atual.
 
 | Versão | Resumo |
 | --- | --- |
+| 0.1.22 | Português, inglês, espanhol e árabe, com seletor de idioma. |
 | 0.1.21 | Atualização de segurança. |
 | 0.1.20 | Atualização de segurança. |
 | 0.1.19 | Manutenção da interface. |
