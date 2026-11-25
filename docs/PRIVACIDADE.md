@@ -1,6 +1,6 @@
 # Política de privacidade — ROMFlow
 
-Revisada em 21 de novembro de 2026 · válida para os fluxos da versão 0.1.21
+Revisada em 25 de novembro de 2026 · válida para os fluxos da versão 0.1.22
 
 ## Quem desenvolve o aplicativo
 
@@ -25,6 +25,10 @@ O login padrão abre o navegador externo na página Motorola/Lenovo, incluindo o
 ## Armazenamento no aparelho
 
 O modelo e o IMEI digitados ficam na memória durante o fluxo de consulta; o app não os grava deliberadamente em preferências, arquivos de histórico ou relatórios do criador. As respostas do catálogo também são processadas em memória. O aplicativo guarda localmente a sessão criptografada, preferências, o nome e identificador do último download e dados de controle de atualização e publicidade. O backup automático desses dados do app está desabilitado. O gerenciador de downloads do Android mantém seus próprios registros e arquivos.
+
+## Idioma do aplicativo
+
+A preferência de idioma é guardada localmente; no Android 13 ou superior, o sistema também pode gerenciá-la. As traduções acompanham o APK e funcionam sem conexão. A troca de idioma não envia textos, identificadores ou sessões a serviços de tradução.
 
 ## Downloads de ROM
 
@@ -60,7 +64,7 @@ Use Sair da conta neste app para apagar a sessão técnica local. Limpar os dado
 
 ## Contato, público e alterações
 
-Dúvidas sobre o aplicativo e solicitações relacionadas aos dados sob responsabilidade do criador podem ser encaminhadas ao contato informado acima. O aplicativo foi pensado para proprietários adultos de aparelhos e profissionais de assistência; não é direcionado a crianças. Alterações relevantes nesta política serão informadas na versão correspondente do aplicativo. Data desta revisão: 21 de novembro de 2026. Contato de suporte e privacidade: paradaseimportsoficial@gmail.com.
+Dúvidas sobre o aplicativo e solicitações relacionadas aos dados sob responsabilidade do criador podem ser encaminhadas ao contato informado acima. O aplicativo foi pensado para proprietários adultos de aparelhos e profissionais de assistência; não é direcionado a crianças. Alterações relevantes nesta política serão informadas na versão correspondente do aplicativo. Data desta revisão: 25 de novembro de 2026. Contato de suporte e privacidade: paradaseimportsoficial@gmail.com.
 
 ## Políticas e documentos dos serviços
 
