@@ -84,3 +84,12 @@ Este repositório público reúne a distribuição e a documentação de uso.
 As contribuições originais do ROMFlow seguem os termos da [licença do aplicativo](LICENSE). Os componentes de terceiros mantêm suas próprias permissões e créditos em [THIRD_PARTY_LICENSES.txt](THIRD_PARTY_LICENSES.txt). A licença MIT da base de JoshRob não se aplica automaticamente a todas as contribuições originais do ROMFlow.
 
 Consulte [Segurança e autenticidade](SECURITY.md) para conferir o certificado oficial e relatar vulnerabilidades em particular.
+
+
+Certificado oficial SHA-256 da distribuição direta:
+
+```text
+9D:30:21:8C:B2:60:B0:83:41:76:AF:31:81:8E:19:94:7F:A6:E3:BA:2F:2D:BF:96:E3:4C:A3:65:0D:07:D8:2C
+```
+
+Com Android SDK Build Tools, confira com `apksigner verify --verbose --print-certs ROMFlow.apk` e compare o certificado com o valor acima. Confira também o hash do arquivo em `SHA256SUMS.txt`. A impressão digital é pública; não contém a chave privada.
