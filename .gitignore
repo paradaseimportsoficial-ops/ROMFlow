@@ -12,3 +12,10 @@ mapping.txt
 configuration.txt
 assinatura-privada/
 projeto-privado/
+
+# Configurações e credenciais locais
+keystore.properties
+local.properties
+google-services.json
+private-signing/
+.env

@@ -45,3 +45,11 @@ O projeto Android não está neste repositório público. Os arquivos automátic
 “Source code” das releases contêm os materiais públicos do repositório. A licença
 não é uma barreira técnica contra análise de APKs nem impede implementações
 independentes das mesmas funcionalidades.
+
+## Versões e limites de proteção
+
+A versão de manutenção atual é a 0.1.23. Prefira a release mais recente. O aplicativo usa assinatura de produção, verificações de integridade e validação do APK de atualização. Isso não torna um APK impossível de analisar ou modificar: confira o certificado e use a distribuição oficial.
+
+SH gerado pelo ROMFlow é importado como um plano fechado, com correspondência integral ao gerador e verificação dos arquivos; o app não executa Bash arbitrário. Um plano reconhecido ou um checksum correto não comprova a autenticidade da ROM nem sua compatibilidade com downgrade. A revisão final distingue comandos executados de etapas omitidas no modo escolhido.
+
+Relatórios técnicos são locais e só saem pelo aplicativo de e-mail após revisão e envio do usuário. Não publique links completos de sessão ou download temporário.

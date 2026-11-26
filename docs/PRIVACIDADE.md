@@ -1,6 +1,6 @@
 # Política de privacidade — ROMFlow
 
-Revisada em 25 de novembro de 2026 · válida para os fluxos da versão 0.1.22
+Revisada em 25 de novembro de 2026 · válida para os fluxos da versão 0.1.23
 
 ## Quem desenvolve o aplicativo
 
@@ -24,7 +24,7 @@ O login padrão abre o navegador externo na página Motorola/Lenovo, incluindo o
 
 ## Armazenamento no aparelho
 
-O modelo e o IMEI digitados ficam na memória durante o fluxo de consulta; o app não os grava deliberadamente em preferências, arquivos de histórico ou relatórios do criador. As respostas do catálogo também são processadas em memória. O aplicativo guarda localmente a sessão criptografada, preferências, o nome e identificador do último download e dados de controle de atualização e publicidade. O backup automático desses dados do app está desabilitado. O gerenciador de downloads do Android mantém seus próprios registros e arquivos.
+O modelo e o IMEI digitados ficam na memória durante o fluxo de consulta; o app não os grava deliberadamente em preferências, arquivos de histórico ou relatórios do criador. As respostas do catálogo também são processadas em memória. O aplicativo guarda localmente a sessão criptografada, preferências, metadados e progresso dos downloads e dados de controle de atualização e publicidade. Os endereços temporários dos novos downloads são criptografados com Android Keystore. O backup automático desses dados do app está desabilitado. O Android mantém os arquivos de Downloads e pode conservar registros dos downloads antigos feitos pelo seu gerenciador.
 
 ## Idioma do aplicativo
 
@@ -32,7 +32,7 @@ A preferência de idioma é guardada localmente; no Android 13 ou superior, o si
 
 ## Downloads de ROM
 
-O arquivo é baixado diretamente do endereço fornecido pelo catálogo por meio do gerenciador de downloads do Android. As ROMs ficam em Downloads/ROMFlow e podem continuar no aparelho após a desinstalação do app. Ao conectar aos serviços, os servidores de destino recebem dados técnicos da conexão, como endereço IP. O criador não hospeda as ROMs nem mantém um servidor próprio para receber modelo, IMEI ou sessão.
+Os novos downloads são feitos diretamente do endereço fornecido pelo catálogo por um serviço do ROMFlow em primeiro plano, com notificação. Downloads antigos realizados pelo gerenciador do Android continuam sob seu controle. As ROMs ficam em Downloads/ROMFlow e podem continuar no aparelho após a desinstalação do app. Ao conectar aos serviços, os servidores de destino recebem dados técnicos da conexão, como endereço IP. O criador não hospeda as ROMs nem mantém um servidor próprio para receber modelo, IMEI ou sessão.
 
 ## Extração e instalação por USB/OTG
 
@@ -72,3 +72,10 @@ Dúvidas sobre o aplicativo e solicitações relacionadas aos dados sob responsa
 - [Privacidade Lenovo](https://www.lenovo.com/br/pt/privacy/)
 - [Privacidade GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)
 
+
+
+## Downloads retomáveis e relatórios locais
+
+Novos downloads usam um serviço em primeiro plano com notificação e um arquivo parcial na coleção Downloads do Android, mantido pendente até a conclusão. A pausa preserva o parcial; cancelar o remove. O aplicativo guarda localmente o endereço temporário do arquivo, criptografado com Android Keystore, e metadados de progresso, tamanho e validação HTTP. Não guarda modelo ou IMEI para renovar automaticamente links. Um novo link pode ser consultado por ação do usuário; a retomada depende do suporte do servidor e da confirmação de identidade do arquivo. Após reiniciar o celular ou se o Android encerrar o serviço, abra o aplicativo para retomar. O Android pode limitar a duração do serviço. Ao concluir, o app verifica tamanho, CRCs do ZIP e calcula SHA-256; isso não comprova a origem ou autenticidade da ROM.
+
+Os últimos 50 eventos técnicos permanecem locais e incluem horário, etapa, código fixo de erro, resposta HTTP, estado da rede, tentativas e progresso. O relatório preparado para e-mail também identifica a versão do app, do Android e o fabricante/modelo deste celular. Não inclui IMEI, credenciais, sessão, endereço completo de download ou conteúdo de respostas. Só é compartilhado se você escolher Reportar erro e enviar pelo seu aplicativo de e-mail após revisar. Limpar os dados do app remove os registros e o endereço criptografado; arquivos concluídos podem continuar em Downloads. Ao copiar o link ou abrir outro gerenciador, você compartilha com ele o endereço do firmware, que pode conter uma autorização temporária para esse arquivo. Nenhuma credencial da API é adicionada. O aplicativo externo aplica suas próprias políticas e controla o download.
