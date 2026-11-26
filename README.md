@@ -10,7 +10,7 @@ Por **Técnico Root — Ivanildo Sousa**. Projeto independente, sem vínculo com
 
 **[📥 Baixar a versão mais recente](https://github.com/paradaseimportsoficial-ops/ROMFlow/releases/latest)**
 
-Baixe **ROMFlow.apk** na publicação mais recente. O arquivo **SHA256SUMS.txt** permite conferir o download. A versão **0.1.23** melhora downloads, diagnóstico e o fluxo de instaladores. Português, inglês, espanhol e árabe continuam disponíveis. Instale por cima da versão anterior para manter os dados do aplicativo.
+Baixe **ROMFlow.apk** na publicação mais recente. O arquivo **SHA256SUMS.txt** permite conferir o download. A versão **0.1.24** amplia o tratamento seguro de instaladores Motorola, destaca apagamentos e bloqueia destinos de download locais ou privados. Português, inglês, espanhol e árabe continuam disponíveis. Instale por cima da versão anterior para manter os dados do aplicativo.
 
 ## Funções
 
@@ -41,6 +41,10 @@ Pausar preserva o parcial. Após reiniciar o celular ou se o Android encerrar o 
 
 Ao importar, selecione a pasta que contém o instalador e suas imagens, mantendo as subpastas exigidas. A tela mostra o nome e o formato selecionados, depois confere os arquivos. BAT/SH externos têm suporte restrito a comandos reconhecidos; não há execução livre de shell. O perfil Stomo mantém suas exigências próprias e pode precisar de formatação manual pelo recovery.
 
+O tratamento de `erase apdp/apdpb` não está mais limitado a cusco: só aceita etapas explícitas do manifest, exige produto correspondente, autorização separada e confirmação das partições pelo bootloader antes de qualquer gravação. Se a consulta não puder ser confirmada, a instalação é bloqueada. Esses apagamentos não equivalem à formatação de userdata, mas continuam sendo alterações destrutivas e exigem revisão. SHs novos incluem as verificações no Termux; regenere scripts antigos para obter essa proteção fora do app.
+
+Downloads internos verificam os destinos e recusam endereços locais/privados, incluindo os retornados por DNS e os redirecionamentos. CDNs públicas continuam aceitas para não impedir fontes legítimas; isso não substitui a confiança no catálogo e no pacote. Downloads externos seguem também as regras do navegador/gerenciador escolhido.
+
 ## Antes de gravar
 
 Faça backup e confirme modelo, variante e ROM. Arquivos ou partições incorretos podem apagar dados ou impedir a inicialização. Tentar manter dados não garante sua preservação. O aplicativo não desbloqueia nem bloqueia o bootloader.
@@ -59,6 +63,7 @@ Captura da versão 0.1.16; detalhes podem diferir da versão atual.
 
 | Versão | Resumo |
 | --- | --- |
+| 0.1.24 | Compatibilidade de manifests com apagamentos adicionais condicionais, confirmação de partições, avisos destacados e bloqueio de destinos privados nos downloads. |
 | 0.1.23 | Downloads retomáveis, links externos, diagnóstico, conversão/importação SH, revisão de instaladores e traduções da licença. |
 | 0.1.22 | Português, inglês, espanhol e árabe, com seletor de idioma. |
 | 0.1.21 | Atualização de segurança. |

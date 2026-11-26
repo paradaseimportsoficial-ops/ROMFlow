@@ -1,6 +1,6 @@
 # Política de privacidade — ROMFlow
 
-Revisada em 25 de novembro de 2026 · válida para os fluxos da versão 0.1.23
+Revisada em 25 de novembro de 2026 · válida para os fluxos da versão 0.1.24
 
 ## Quem desenvolve o aplicativo
 
